@@ -23,9 +23,27 @@
 		BC9CC98C17504B71000EBF05 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */; };
 		BC9CC98E17504B71000EBF05 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98D17504B71000EBF05 /* second.png */; };
 		BC9CC99017504B71000EBF05 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98F17504B71000EBF05 /* second@2x.png */; };
+		BCA9C9D3175BF99E001E1D3C /* CCRemoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */; };
+		BCA9C9D5175BFBB7001E1D3C /* CCStudiesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096961752CE240019129F /* CCStudiesStore.m */; };
+		BCA9C9D6175BFBBE001E1D3C /* CCMainMenuStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC309699175A6F7F0019129F /* CCMainMenuStore.m */; };
+		BCA9C9D7175BFBC6001E1D3C /* CCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC30969C175A72250019129F /* CCMenuItem.m */; };
+		BCA9C9D8175BFBCC001E1D3C /* CCStudies.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A1175ACD0B0019129F /* CCStudies.m */; };
+		BCA9C9D9175BFBD9001E1D3C /* CCBibleBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC3096951752CE240019129F /* CCStudiesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudiesStore.h; sourceTree = "<group>"; };
+		BC3096961752CE240019129F /* CCStudiesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudiesStore.m; sourceTree = "<group>"; };
+		BC309698175A6F7F0019129F /* CCMainMenuStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainMenuStore.h; sourceTree = "<group>"; };
+		BC309699175A6F7F0019129F /* CCMainMenuStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainMenuStore.m; sourceTree = "<group>"; };
+		BC30969B175A72250019129F /* CCMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuItem.h; sourceTree = "<group>"; };
+		BC30969C175A72250019129F /* CCMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuItem.m; sourceTree = "<group>"; };
+		BC30969E175AC7710019129F /* ccmc_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner.png; sourceTree = "<group>"; };
+		BC3096A0175ACD0B0019129F /* CCStudies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudies.h; sourceTree = "<group>"; };
+		BC3096A1175ACD0B0019129F /* CCStudies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudies.m; sourceTree = "<group>"; };
+		BC3096A4175AE0A80019129F /* CCBibleBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBibleBookViewController.h; sourceTree = "<group>"; };
+		BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBibleBookViewController.m; sourceTree = "<group>"; };
+		BC3096A7175AE5390019129F /* bible.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bible.plist; sourceTree = "<group>"; };
 		BC9CC96517504B71000EBF05 /* CalvaryiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalvaryiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9CC96817504B71000EBF05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC9CC96A17504B71000EBF05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +66,8 @@
 		BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSecondViewController.m; sourceTree = "<group>"; };
 		BC9CC98D17504B71000EBF05 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BC9CC98F17504B71000EBF05 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRemoteListViewController.h; sourceTree = "<group>"; };
+		BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRemoteListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC3096941752C4C10019129F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC3096951752CE240019129F /* CCStudiesStore.h */,
+				BC3096961752CE240019129F /* CCStudiesStore.m */,
+				BC309698175A6F7F0019129F /* CCMainMenuStore.h */,
+				BC309699175A6F7F0019129F /* CCMainMenuStore.m */,
+				BC30969B175A72250019129F /* CCMenuItem.h */,
+				BC30969C175A72250019129F /* CCMenuItem.m */,
+				BC3096A0175ACD0B0019129F /* CCStudies.h */,
+				BC3096A1175ACD0B0019129F /* CCStudies.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BC3096A3175AE04F0019129F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */,
+				BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */,
+				BC9CC98A17504B71000EBF05 /* CCSecondViewController.h */,
+				BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */,
+				BC9CC98317504B71000EBF05 /* CCFirstViewController.h */,
+				BC9CC98417504B71000EBF05 /* CCFirstViewController.m */,
+				BC3096A4175AE0A80019129F /* CCBibleBookViewController.h */,
+				BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		BC9CC95C17504B71000EBF05 = {
 			isa = PBXGroup;
 			children = (
@@ -94,15 +144,13 @@
 		BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC3096A3175AE04F0019129F /* Controllers */,
+				BC3096941752C4C10019129F /* Models */,
 				BC9CC97717504B71000EBF05 /* CCAppDelegate.h */,
 				BC9CC97817504B71000EBF05 /* CCAppDelegate.m */,
 				BC9CC98017504B71000EBF05 /* MainStoryboard.storyboard */,
-				BC9CC98317504B71000EBF05 /* CCFirstViewController.h */,
-				BC9CC98417504B71000EBF05 /* CCFirstViewController.m */,
 				BC9CC98617504B71000EBF05 /* first.png */,
 				BC9CC98817504B71000EBF05 /* first@2x.png */,
-				BC9CC98A17504B71000EBF05 /* CCSecondViewController.h */,
-				BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */,
 				BC9CC98D17504B71000EBF05 /* second.png */,
 				BC9CC98F17504B71000EBF05 /* second@2x.png */,
 				BC9CC96F17504B71000EBF05 /* Supporting Files */,
@@ -113,6 +161,7 @@
 		BC9CC96F17504B71000EBF05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC30969E175AC7710019129F /* ccmc_banner.png */,
 				BC9CC97017504B71000EBF05 /* CalvaryiPhoneApp-Info.plist */,
 				BC9CC97117504B71000EBF05 /* InfoPlist.strings */,
 				BC9CC97417504B71000EBF05 /* main.m */,
@@ -120,6 +169,7 @@
 				BC9CC97A17504B71000EBF05 /* Default.png */,
 				BC9CC97C17504B71000EBF05 /* Default@2x.png */,
 				BC9CC97E17504B71000EBF05 /* Default-568h@2x.png */,
+				BC3096A7175AE5390019129F /* bible.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,10 +245,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA9C9D9175BFBD9001E1D3C /* CCBibleBookViewController.m in Sources */,
+				BCA9C9D8175BFBCC001E1D3C /* CCStudies.m in Sources */,
+				BCA9C9D7175BFBC6001E1D3C /* CCMenuItem.m in Sources */,
+				BCA9C9D6175BFBBE001E1D3C /* CCMainMenuStore.m in Sources */,
+				BCA9C9D5175BFBB7001E1D3C /* CCStudiesStore.m in Sources */,
 				BC9CC97517504B71000EBF05 /* main.m in Sources */,
 				BC9CC97917504B71000EBF05 /* CCAppDelegate.m in Sources */,
 				BC9CC98517504B71000EBF05 /* CCFirstViewController.m in Sources */,
 				BC9CC98C17504B71000EBF05 /* CCSecondViewController.m in Sources */,
+				BCA9C9D3175BF99E001E1D3C /* CCRemoteListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +377,7 @@
 				BC9CC99517504B71000EBF05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

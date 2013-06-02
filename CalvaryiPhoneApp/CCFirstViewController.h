@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCFirstViewController : UIViewController
-
+@interface CCFirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end
