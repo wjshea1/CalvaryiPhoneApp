@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7782986B84FA4A33AC0B121F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B050C7BD24ABA99A73187 /* libPods.a */; };
+		BC756571176013E300CE64BF /* CCSermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756570176013E300CE64BF /* CCSermonModel.m */; };
+		BC7565741760154700CE64BF /* CCSermonStudyStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7565731760154700CE64BF /* CCSermonStudyStore.m */; };
+		BC756577176018D300CE64BF /* CCRecentFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756576176018D300CE64BF /* CCRecentFeed.m */; };
+		BC8F0001175FC0E0007759CB /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
 		BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96817504B71000EBF05 /* UIKit.framework */; };
 		BC9CC96B17504B71000EBF05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96A17504B71000EBF05 /* Foundation.framework */; };
 		BC9CC96D17504B71000EBF05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96C17504B71000EBF05 /* CoreGraphics.framework */; };
@@ -29,9 +34,12 @@
 		BCA9C9D7175BFBC6001E1D3C /* CCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC30969C175A72250019129F /* CCMenuItem.m */; };
 		BCA9C9D8175BFBCC001E1D3C /* CCStudies.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A1175ACD0B0019129F /* CCStudies.m */; };
 		BCA9C9D9175BFBD9001E1D3C /* CCBibleBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */; };
+		BCC4FF3717615E30001573D7 /* SermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3617615E30001573D7 /* SermonModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		124B050C7BD24ABA99A73187 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF9844296524232AF8C9829 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BC3096951752CE240019129F /* CCStudiesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudiesStore.h; sourceTree = "<group>"; };
 		BC3096961752CE240019129F /* CCStudiesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudiesStore.m; sourceTree = "<group>"; };
 		BC309698175A6F7F0019129F /* CCMainMenuStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainMenuStore.h; sourceTree = "<group>"; };
@@ -44,6 +52,13 @@
 		BC3096A4175AE0A80019129F /* CCBibleBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBibleBookViewController.h; sourceTree = "<group>"; };
 		BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBibleBookViewController.m; sourceTree = "<group>"; };
 		BC3096A7175AE5390019129F /* bible.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bible.plist; sourceTree = "<group>"; };
+		BC75656F176013E300CE64BF /* CCSermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonModel.h; sourceTree = "<group>"; };
+		BC756570176013E300CE64BF /* CCSermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSermonModel.m; sourceTree = "<group>"; };
+		BC7565721760154700CE64BF /* CCSermonStudyStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonStudyStore.h; sourceTree = "<group>"; };
+		BC7565731760154700CE64BF /* CCSermonStudyStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSermonStudyStore.m; sourceTree = "<group>"; };
+		BC756575176018D200CE64BF /* CCRecentFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecentFeed.h; sourceTree = "<group>"; };
+		BC756576176018D300CE64BF /* CCRecentFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecentFeed.m; sourceTree = "<group>"; };
+		BC8F0000175FC0E0007759CB /* current_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_response.json; sourceTree = "<group>"; };
 		BC9CC96517504B71000EBF05 /* CalvaryiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalvaryiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9CC96817504B71000EBF05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC9CC96A17504B71000EBF05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,6 +83,8 @@
 		BC9CC98F17504B71000EBF05 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRemoteListViewController.h; sourceTree = "<group>"; };
 		BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRemoteListViewController.m; sourceTree = "<group>"; };
+		BCC4FF3517615E30001573D7 /* SermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonModel.h; sourceTree = "<group>"; };
+		BCC4FF3617615E30001573D7 /* SermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +95,7 @@
 				BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */,
 				BC9CC96B17504B71000EBF05 /* Foundation.framework in Frameworks */,
 				BC9CC96D17504B71000EBF05 /* CoreGraphics.framework in Frameworks */,
+				7782986B84FA4A33AC0B121F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +113,14 @@
 				BC30969C175A72250019129F /* CCMenuItem.m */,
 				BC3096A0175ACD0B0019129F /* CCStudies.h */,
 				BC3096A1175ACD0B0019129F /* CCStudies.m */,
+				BC75656F176013E300CE64BF /* CCSermonModel.h */,
+				BC756570176013E300CE64BF /* CCSermonModel.m */,
+				BC7565721760154700CE64BF /* CCSermonStudyStore.h */,
+				BC7565731760154700CE64BF /* CCSermonStudyStore.m */,
+				BC756575176018D200CE64BF /* CCRecentFeed.h */,
+				BC756576176018D300CE64BF /* CCRecentFeed.m */,
+				BCC4FF3517615E30001573D7 /* SermonModel.h */,
+				BCC4FF3617615E30001573D7 /* SermonModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -114,12 +140,21 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		BC8FFFFF175FC0C2007759CB /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC8F0000175FC0E0007759CB /* current_response.json */,
+			);
+			name = "Test Data";
+			sourceTree = "<group>";
+		};
 		BC9CC95C17504B71000EBF05 = {
 			isa = PBXGroup;
 			children = (
 				BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */,
 				BC9CC96717504B71000EBF05 /* Frameworks */,
 				BC9CC96617504B71000EBF05 /* Products */,
+				3FF9844296524232AF8C9829 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +172,7 @@
 				BC9CC96817504B71000EBF05 /* UIKit.framework */,
 				BC9CC96A17504B71000EBF05 /* Foundation.framework */,
 				BC9CC96C17504B71000EBF05 /* CoreGraphics.framework */,
+				124B050C7BD24ABA99A73187 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +180,7 @@
 		BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC8FFFFF175FC0C2007759CB /* Test Data */,
 				BC3096A3175AE04F0019129F /* Controllers */,
 				BC3096941752C4C10019129F /* Models */,
 				BC9CC97717504B71000EBF05 /* CCAppDelegate.h */,
@@ -181,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC9CC99317504B71000EBF05 /* Build configuration list for PBXNativeTarget "CalvaryiPhoneApp" */;
 			buildPhases = (
+				2AC1D79FAB6A4407B63FDDF5 /* Check Pods Manifest.lock */,
 				BC9CC96117504B71000EBF05 /* Sources */,
 				BC9CC96217504B71000EBF05 /* Frameworks */,
 				BC9CC96317504B71000EBF05 /* Resources */,
+				E2E0DAB594DC4FF4955819A1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,10 +274,42 @@
 				BC9CC98917504B71000EBF05 /* first@2x.png in Resources */,
 				BC9CC98E17504B71000EBF05 /* second.png in Resources */,
 				BC9CC99017504B71000EBF05 /* second@2x.png in Resources */,
+				BC8F0001175FC0E0007759CB /* current_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AC1D79FAB6A4407B63FDDF5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		E2E0DAB594DC4FF4955819A1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC9CC96117504B71000EBF05 /* Sources */ = {
@@ -255,6 +326,10 @@
 				BC9CC98517504B71000EBF05 /* CCFirstViewController.m in Sources */,
 				BC9CC98C17504B71000EBF05 /* CCSecondViewController.m in Sources */,
 				BCA9C9D3175BF99E001E1D3C /* CCRemoteListViewController.m in Sources */,
+				BC756571176013E300CE64BF /* CCSermonModel.m in Sources */,
+				BC7565741760154700CE64BF /* CCSermonStudyStore.m in Sources */,
+				BC756577176018D300CE64BF /* CCRecentFeed.m in Sources */,
+				BCC4FF3717615E30001573D7 /* SermonModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +413,7 @@
 		};
 		BC9CC99417504B71000EBF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF9844296524232AF8C9829 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalvaryiPhoneApp/CalvaryiPhoneApp-Prefix.pch";
@@ -349,6 +425,7 @@
 		};
 		BC9CC99517504B71000EBF05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF9844296524232AF8C9829 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalvaryiPhoneApp/CalvaryiPhoneApp-Prefix.pch";

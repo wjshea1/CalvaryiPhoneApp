@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="-774"/>
+            <point key="canvasLocation" x="333" y="-1000"/>
         </scene>
         <!--Bible Book View Controller - Books-->
         <scene sceneID="mTn-GV-fah">
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="943" y="-1469"/>
         </scene>
-        <!--View Controller - Sermon-->
+        <!--Remote List View Controller - Sermon-->
         <scene sceneID="U7h-0S-shA">
             <objects>
-                <viewController title="Sermon" id="x0t-6d-LQF" sceneMemberID="viewController">
+                <viewController title="Sermon" id="x0t-6d-LQF" customClass="CCRemoteListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aed-zO-Hb4">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
