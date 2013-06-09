@@ -35,6 +35,9 @@
 		BCA9C9D8175BFBCC001E1D3C /* CCStudies.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A1175ACD0B0019129F /* CCStudies.m */; };
 		BCA9C9D9175BFBD9001E1D3C /* CCBibleBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */; };
 		BCC4FF3717615E30001573D7 /* SermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3617615E30001573D7 /* SermonModel.m */; };
+		BCC4FF3A1762D37C001573D7 /* CCFeedImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */; };
+		BCC4FF3D1763CC1B001573D7 /* CCFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */; };
+		BCC4FF401763D4DC001573D7 /* CCFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3F1763D4DC001573D7 /* CCFeed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +88,12 @@
 		BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRemoteListViewController.m; sourceTree = "<group>"; };
 		BCC4FF3517615E30001573D7 /* SermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonModel.h; sourceTree = "<group>"; };
 		BCC4FF3617615E30001573D7 /* SermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonModel.m; sourceTree = "<group>"; };
+		BCC4FF381762D37C001573D7 /* CCFeedImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeedImageStore.h; sourceTree = "<group>"; };
+		BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFeedImageStore.m; sourceTree = "<group>"; };
+		BCC4FF3B1763CC1B001573D7 /* CCFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeedManager.h; sourceTree = "<group>"; };
+		BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFeedManager.m; sourceTree = "<group>"; };
+		BCC4FF3E1763D4DC001573D7 /* CCFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeed.h; sourceTree = "<group>"; };
+		BCC4FF3F1763D4DC001573D7 /* CCFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFeed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 		BC3096941752C4C10019129F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCC4FF411763EBD8001573D7 /* Feeds */,
 				BC3096951752CE240019129F /* CCStudiesStore.h */,
 				BC3096961752CE240019129F /* CCStudiesStore.m */,
 				BC309698175A6F7F0019129F /* CCMainMenuStore.h */,
@@ -119,8 +129,6 @@
 				BC7565731760154700CE64BF /* CCSermonStudyStore.m */,
 				BC756575176018D200CE64BF /* CCRecentFeed.h */,
 				BC756576176018D300CE64BF /* CCRecentFeed.m */,
-				BCC4FF3517615E30001573D7 /* SermonModel.h */,
-				BCC4FF3617615E30001573D7 /* SermonModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -209,6 +217,21 @@
 				BC3096A7175AE5390019129F /* bible.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCC4FF411763EBD8001573D7 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4FF3517615E30001573D7 /* SermonModel.h */,
+				BCC4FF3617615E30001573D7 /* SermonModel.m */,
+				BCC4FF381762D37C001573D7 /* CCFeedImageStore.h */,
+				BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */,
+				BCC4FF3B1763CC1B001573D7 /* CCFeedManager.h */,
+				BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */,
+				BCC4FF3E1763D4DC001573D7 /* CCFeed.h */,
+				BCC4FF3F1763D4DC001573D7 /* CCFeed.m */,
+			);
+			name = Feeds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +353,9 @@
 				BC7565741760154700CE64BF /* CCSermonStudyStore.m in Sources */,
 				BC756577176018D300CE64BF /* CCRecentFeed.m in Sources */,
 				BCC4FF3717615E30001573D7 /* SermonModel.m in Sources */,
+				BCC4FF3A1762D37C001573D7 /* CCFeedImageStore.m in Sources */,
+				BCC4FF3D1763CC1B001573D7 /* CCFeedManager.m in Sources */,
+				BCC4FF401763D4DC001573D7 /* CCFeed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "CCBibleBookViewController.h"
+#import "CCRemoteListViewController.h"
 
 @interface CCBibleBookViewController ()
    
@@ -148,6 +149,10 @@ NSArray *list = nil;
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
+    CCRemoteListViewController *destView = segue.destinationViewController;
+    NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+    _item.bookNumber = [indexPath row];
+    destView.item = _item;
 }
 
 @end

@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CCMenuItem.h"
-
+#import "CCFeedManager.h"
 @interface CCRemoteListViewController : UITableViewController
+
+{
+    //CCFeedManager* _feedManager;
+}
+
 @property(weak, nonatomic)CCMenuItem *item;
+
 @end

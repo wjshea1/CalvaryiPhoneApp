@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCFeedManager.h"
 
 @interface CCSecondViewController : UIViewController
 

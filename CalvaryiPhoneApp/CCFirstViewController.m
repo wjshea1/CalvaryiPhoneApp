@@ -9,6 +9,7 @@
 #import "CCFirstViewController.h"
 #import "CCMainMenuStore.h"
 #import "CCRemoteListViewController.h"
+#import "CCBibleBookViewController.h"
 
 @interface CCFirstViewController ()
 
@@ -93,6 +94,8 @@
     NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
     CCMenuItem *item = [[CCMainMenuStore sharedStore] getMenuItemAtIndex:[indexPath row] ];
     if ( item.requiresBooksOfTheBible){
+        CCBibleBookViewController *destView = segue.destinationViewController;
+        destView.item = item;
         // Do something here for books of the bible
     } else {
         CCRemoteListViewController *destView = segue.destinationViewController;

@@ -8,6 +8,8 @@
 
 #import "CCRemoteListViewController.h"
 #import "CCSermonStudyStore.h"
+#import "MBProgressHUD.h"
+#import "CCFeedManager.h"                               
 
 @interface CCRemoteListViewController ()
 
@@ -34,6 +36,29 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    NSString *requestUrl = _item.requestUrl;
+    if ( _item.bookNumber ) {
+        [requestUrl stringByAppendingFormat:@"\%d", _item.bookNumber];
+    }
+    CCFeedManager *myManager = [CCFeedManager sharedManager];
+    [myManager getFeedWithURL:requestUrl 
+                   completion:^{
+                       [MBProgressHUD hideHUDForView:self.view animated:YES];
+                       [self.tableView reloadData];
+                   }];
+    
+
+    
+    
+    
+    
+}
+-(void) awakeFromNib
+{
+    NSLog(@"RemoteListView awakeFromNib");
+    NSLog(@"item name: %@, bookNumber: %d", _item.name, _item.bookNumber);
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +66,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Table view data source
 
@@ -53,19 +79,33 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    CCSermonStudyStore *myStore = [CCSermonStudyStore sharedStoreWithView:self.view];
     
-    return 0;
+    // The logic of this function just got funky
+
+    // Return the number of rows in the section.
+    CCFeedManager *myManager = [CCFeedManager sharedManager];
+     
+    return [myManager getCurrentListCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"SERMON_CELL_REUSE_ID";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    CCFeedManager *myManager = [CCFeedManager sharedManager];
+    SermonModel *sermon = [myManager objectInCurrentAtIndex:[indexPath row]];
+    
+  /*  CCSermonStudyStore *myStore = [CCSermonStudyStore sharedStoreWithView:self.view];
+    SermonModel *sermon = [myStore getMenuItemAtIndex:[indexPath row]];*/
+    [[cell textLabel] setText:[sermon title]];
+    [[cell detailTextLabel] setText:[sermon summary]];
+    
+    
+    // Create Image Cache and URL by
+    // UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:sermon.]]];
+    
+
     
     return cell;
 }

@@ -15,12 +15,16 @@
 {
     // This will eventually be a NSMutableArray
     CCRecentFeed * _list;
+    NSMutableDictionary *_dict;
 }
 
 // Need to figure out the best way to handle this i should probably use a block pased in by the parent on completion
 + (CCSermonStudyStore *) sharedStoreWithView:(UIView *)parent;
-- (CCSermonModel  *) getMenuItemAtIndex: (int) index;
+- (SermonModel  *) getMenuItemAtIndex: (int) index;
 - (int) getNumberOfItems;
+
+
+
 -(NSString *)getJSONResponse;
 
 @end

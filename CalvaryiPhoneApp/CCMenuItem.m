@@ -24,6 +24,7 @@ WithRequiresBookOfTheBible: (BOOL) reqbb
         [self setRequiresBooksOfTheBible:reqbb];
         [self setRequestUrl:requestUrl];
         
+        
     }
 
     

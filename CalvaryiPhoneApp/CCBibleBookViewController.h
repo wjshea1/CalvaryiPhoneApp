@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCMenuItem.h"
 
 @interface CCBibleBookViewController : UITableViewController
-
+@property(weak, nonatomic) CCMenuItem *item;
 @end
 
 NSArray *bookArray;

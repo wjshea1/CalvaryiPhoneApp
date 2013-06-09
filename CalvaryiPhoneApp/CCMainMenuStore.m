@@ -16,7 +16,7 @@
     self = [super init];
     if (self) {
         // Load default Menus Here
-        CCMenuItem *item = [[CCMenuItem alloc] initWithName:@"Recent Messages" WithDescription:@"The 5 must recent studies" WithImage:@"" WithRequiresBookOfTheBible:FALSE WithRequestUrl:@""];
+        CCMenuItem *item = [[CCMenuItem alloc] initWithName:@"Recent Messages" WithDescription:@"The 5 must recent studies" WithImage:@"" WithRequiresBookOfTheBible:FALSE WithRequestUrl:@"http://localhost:8080/Calvary/feeds/current"];
         CCMenuItem *item2 = [[CCMenuItem alloc] initWithName:@"Verse by Verse" WithDescription:@"Verse by Verse Studies" WithImage:@"" WithRequiresBookOfTheBible:TRUE WithRequestUrl:@""];
         CCMenuItem *item3 = [[CCMenuItem alloc] initWithName:@"Featured Messages" WithDescription:@"Verse by Verse Studies" WithImage:@"" WithRequiresBookOfTheBible:FALSE WithRequestUrl:@""];
         CCMenuItem *item4 = [[CCMenuItem alloc] initWithName:@"Guest Speakers" WithDescription:@"Verse by Verse Studies" WithImage:@"" WithRequiresBookOfTheBible:FALSE WithRequestUrl:@""];

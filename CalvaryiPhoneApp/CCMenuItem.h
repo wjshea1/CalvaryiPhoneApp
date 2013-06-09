@@ -11,10 +11,12 @@
 @interface CCMenuItem : NSObject
 
 @property (weak, nonatomic) NSString *name;
-@property ( weak, nonatomic ) NSString *description;
+@property (weak, nonatomic ) NSString *description;
 @property (weak, nonatomic) UIImage *image;
 @property (nonatomic) BOOL requiresBooksOfTheBible;
 @property (weak,nonatomic) NSString *requestUrl;
+@property (nonatomic) int bookNumber;
+
 
 -(id) initWithName: (NSString *) name
    WithDescription: (NSString *) description

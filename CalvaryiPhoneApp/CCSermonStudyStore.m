@@ -17,23 +17,11 @@
     self = [super init];
     if (self) {
         
+        _dict = [[NSMutableDictionary alloc] init];
         
-        
-    
-        _list = [[CCRecentFeed alloc] initFromURLWithString:@"http://localhost:8080/Calvary/feeds/current"
-                                                 completion:^(JSONModel *model, JSONModelError *err){
-                                                     NSLog(@"feeds, %@", _list.sermons);
-                                                     
-                                                 }];
-
-        
-   /*     [JSONHTTPClient getJSONFromURLWithString:@"http://localhost:8080/Calvary/feeds/current" completion:^(NSDictionary *json, JSONModelError *err) {
-            NSError *error = nil;
-            NSLog([json description]);
-            _list = [[CCRecentFeed alloc] initWithDictionary:json error:&error] ;
-            
-        }]; */
-    }
+        // Init with recent feed
+      
+      }
     return self;
 }
 
@@ -46,6 +34,9 @@
                                                  completion:^(JSONModel *model, JSONModelError *err){
                                                      NSLog(@"feeds, %@", _list.sermons);
                                                      [MBProgressHUD hideHUDForView:parentView animated:YES];
+                                                     dispatch_async(dispatch_get_main_queue(), ^{
+                                                         [((UITableView *)parentView) reloadData];
+                                                     });
                                                  }];
 
         
@@ -56,6 +47,8 @@
 
 
 
+
+
 + (CCSermonStudyStore *) sharedStoreWithView:(UIView *)parent
 {
     
@@ -63,12 +56,12 @@
     if ( !store ) {
         store = [[CCSermonStudyStore alloc] initWithView:parent];
     }
-    
+   
   
     
     return store;
 }
-- (CCSermonModel  *) getMenuItemAtIndex: (int) index
+- (SermonModel  *) getMenuItemAtIndex: (int) index
 {
     
     return [[_list sermons] objectAtIndex:index];
