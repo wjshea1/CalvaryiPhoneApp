@@ -1,13 +1,16 @@
 PODS:
   - JSONModel (0.9.0)
   - MBProgressHUD (0.6)
+  - TestFlightSDK (1.3.0-beta.6)
 
 DEPENDENCIES:
   - JSONModel
   - MBProgressHUD (~> 0.6)
+  - TestFlightSDK
 
 SPEC CHECKSUMS:
   JSONModel: 0bd6b228cab887fa0637abe05e805aef8a624461
   MBProgressHUD: 9b55a90566fb5d07df0602f6fd9fa04510ad5d52
+  TestFlightSDK: f3e516c64f61abedeb26a7b184101df54df3db09
 
 COCOAPODS: 0.19.1

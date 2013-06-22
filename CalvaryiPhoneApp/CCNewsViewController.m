@@ -1,24 +1,20 @@
 //
-//  CCRemoteListViewController.m
+//  CCNewsViewController.m
 //  CalvaryiPhoneApp
 //
-//  Created by Bill Shea on 6/2/13.
+//  Created by Bill Shea on 6/20/13.
 //  Copyright (c) 2013 Calvary Chapel Mercer County. All rights reserved.
 //
 
-#import "CCRemoteListViewController.h"
-#import "CCSermonStudyStore.h"
+#import "CCNewsViewController.h"
+#import "CCNewsFeedManager.h"
 #import "MBProgressHUD.h"
-#import "CCFeedManager.h" 
-#import "CCMediaPlayerViewController.h"
-#import "CCFeedImageStore.h"
 
-@interface CCRemoteListViewController ()
+@interface CCNewsViewController ()
 
 @end
 
-@implementation CCRemoteListViewController
-
+@implementation CCNewsViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,30 +35,17 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    NSString *requestUrl = @"http://localhost:8080/Calvary/feeds/news";
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    NSMutableString *requestUrl = [[NSMutableString alloc] initWithString:_item.requestUrl];
-    if ( _item.bookNumber ) {
-       // [requestUrl stringByAppendingFormat:@"\%i", _item.bookNumber];
-        // need to fix the book number for now should change to book name later.
-        [requestUrl appendFormat:@"/%i",_item.bookNumber +1 ];
-    }
-    CCFeedManager *myManager = [CCFeedManager sharedManager];
-    [myManager getFeedWithURL:requestUrl 
-                   completion:^{
-                       [MBProgressHUD hideHUDForView:self.view animated:YES];
-                       [self.tableView reloadData];
-                   }];
     
-
+    CCNewsFeedManager *myManager = [CCNewsFeedManager sharedManager];
     
+    [myManager getNewsWithUrl:requestUrl completion:^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self.tableView reloadData];
+        
+    }];
     
-    
-    
-}
--(void) awakeFromNib
-{
-    NSLog(@"RemoteListView awakeFromNib");
-    NSLog(@"item name: %@, bookNumber: %d", _item.name, _item.bookNumber);
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,47 +54,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
-    // The logic of this function just got funky
-
     // Return the number of rows in the section.
-    CCFeedManager *myManager = [CCFeedManager sharedManager];
-     
-    return [myManager getCurrentListCount];
+    CCNewsFeedManager *feedMgr = [CCNewsFeedManager sharedManager];
+    return [feedMgr getCurrentListCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SERMON_CELL_REUSE_ID";
+    static NSString *CellIdentifier = @"NEWS_CELL_REUSE";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    CCFeedManager *myManager = [CCFeedManager sharedManager];
-    SermonModel *sermon = [myManager objectInCurrentAtIndex:[indexPath row]];
+    CCNewsFeedManager *myManager = [CCNewsFeedManager sharedManager];
+    NewsModel *model = [myManager objectInCurrentAtIndex:[indexPath row]];
     
-  /*  CCSermonStudyStore *myStore = [CCSermonStudyStore sharedStoreWithView:self.view];
-    SermonModel *sermon = [myStore getMenuItemAtIndex:[indexPath row]];*/
-    [[cell textLabel] setText:[sermon title]];
-    [[cell detailTextLabel] setText:[sermon summary]];
-    UIImage *image = [[CCFeedImageStore sharedStore] getImageForURL:sermon.imageFileLocation];
-    [[cell imageView] setImage:image];
-    
-    
-    // Create Image Cache and URL by
-    // UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:sermon.]]];
-    
-
+    /*  CCSermonStudyStore *myStore = [CCSermonStudyStore sharedStoreWithView:self.view];
+     SermonModel *sermon = [myStore getMenuItemAtIndex:[indexPath row]];*/
+    [[cell textLabel] setText:[model  headline]];
+    [[cell detailTextLabel] setText:[model description]];
+        
     
     return cell;
 }
@@ -159,18 +129,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  //  [self performSegueWithIdentifier:@"REMOTE_LIST_VIEW_SEGUE_FROM_BOOKS" sender:self];
-    
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    CCMediaPlayerViewController *destView = segue.destinationViewController;
-    NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
-    CCFeedManager *myManager = [CCFeedManager sharedManager];
-    SermonModel *sermon = [myManager objectInCurrentAtIndex:[indexPath row]];
-    destView.item = sermon;
-    
+
 }
 
 @end

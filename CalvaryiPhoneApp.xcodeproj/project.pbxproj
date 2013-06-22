@@ -8,9 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		7782986B84FA4A33AC0B121F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B050C7BD24ABA99A73187 /* libPods.a */; };
+		BC372E7B1768DCC100ACC6B2 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7A1768DCC100ACC6B2 /* NewsModel.m */; };
+		BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */; };
+		BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A95441772D1B6004EF63D /* CCNewsViewController.m */; };
 		BC756571176013E300CE64BF /* CCSermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756570176013E300CE64BF /* CCSermonModel.m */; };
 		BC7565741760154700CE64BF /* CCSermonStudyStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7565731760154700CE64BF /* CCSermonStudyStore.m */; };
 		BC756577176018D300CE64BF /* CCRecentFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756576176018D300CE64BF /* CCRecentFeed.m */; };
+		BC7A663B1772AD65003642E1 /* CCBibleBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */; };
+		BC7A663C1772AD65003642E1 /* CCStudies.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A1175ACD0B0019129F /* CCStudies.m */; };
+		BC7A663D1772AD65003642E1 /* CCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC30969C175A72250019129F /* CCMenuItem.m */; };
+		BC7A663E1772AD65003642E1 /* CCMainMenuStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC309699175A6F7F0019129F /* CCMainMenuStore.m */; };
+		BC7A663F1772AD65003642E1 /* CCStudiesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096961752CE240019129F /* CCStudiesStore.m */; };
+		BC7A66401772AD65003642E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC97417504B71000EBF05 /* main.m */; };
+		BC7A66411772AD65003642E1 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC97817504B71000EBF05 /* CCAppDelegate.m */; };
+		BC7A66421772AD65003642E1 /* CCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98417504B71000EBF05 /* CCFirstViewController.m */; };
+		BC7A66431772AD65003642E1 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */; };
+		BC7A66441772AD65003642E1 /* CCRemoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */; };
+		BC7A66451772AD65003642E1 /* CCSermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756570176013E300CE64BF /* CCSermonModel.m */; };
+		BC7A66461772AD65003642E1 /* CCSermonStudyStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7565731760154700CE64BF /* CCSermonStudyStore.m */; };
+		BC7A66471772AD65003642E1 /* CCRecentFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756576176018D300CE64BF /* CCRecentFeed.m */; };
+		BC7A66481772AD65003642E1 /* SermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3617615E30001573D7 /* SermonModel.m */; };
+		BC7A66491772AD65003642E1 /* CCFeedImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */; };
+		BC7A664A1772AD65003642E1 /* CCFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */; };
+		BC7A664B1772AD65003642E1 /* CCFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3F1763D4DC001573D7 /* CCFeed.m */; };
+		BC7A664C1772AD65003642E1 /* CCMediaPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */; };
+		BC7A664D1772AD65003642E1 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7A1768DCC100ACC6B2 /* NewsModel.m */; };
+		BC7A664E1772AD65003642E1 /* CCNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */; };
+		BC7A664F1772AD65003642E1 /* CCNewsFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */; };
+		BC7A66511772AD65003642E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC4FF4B17652607001573D7 /* AVFoundation.framework */; };
+		BC7A66521772AD65003642E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96817504B71000EBF05 /* UIKit.framework */; };
+		BC7A66531772AD65003642E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96A17504B71000EBF05 /* Foundation.framework */; };
+		BC7A66541772AD65003642E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96C17504B71000EBF05 /* CoreGraphics.framework */; };
+		BC7A66551772AD65003642E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B050C7BD24ABA99A73187 /* libPods.a */; };
+		BC7A66571772AD65003642E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC97117504B71000EBF05 /* InfoPlist.strings */; };
+		BC7A66581772AD65003642E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC97A17504B71000EBF05 /* Default.png */; };
+		BC7A66591772AD65003642E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC97C17504B71000EBF05 /* Default@2x.png */; };
+		BC7A665A1772AD65003642E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC97E17504B71000EBF05 /* Default-568h@2x.png */; };
+		BC7A665B1772AD65003642E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98017504B71000EBF05 /* MainStoryboard.storyboard */; };
+		BC7A665C1772AD65003642E1 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98617504B71000EBF05 /* first.png */; };
+		BC7A665D1772AD65003642E1 /* bible.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3096A7175AE5390019129F /* bible.plist */; };
+		BC7A665E1772AD65003642E1 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98817504B71000EBF05 /* first@2x.png */; };
+		BC7A665F1772AD65003642E1 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98D17504B71000EBF05 /* second.png */; };
+		BC7A66601772AD65003642E1 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98F17504B71000EBF05 /* second@2x.png */; };
+		BC7A66611772AD65003642E1 /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
+		BC7A66621772AD65003642E1 /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC4FF4617650580001573D7 /* ccmc_banner2.png */; };
+		BC86D850176A43C000348353 /* CCNewsFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */; };
 		BC8F0001175FC0E0007759CB /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
 		BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96817504B71000EBF05 /* UIKit.framework */; };
 		BC9CC96B17504B71000EBF05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96A17504B71000EBF05 /* Foundation.framework */; };
@@ -38,6 +80,10 @@
 		BCC4FF3A1762D37C001573D7 /* CCFeedImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */; };
 		BCC4FF3D1763CC1B001573D7 /* CCFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */; };
 		BCC4FF401763D4DC001573D7 /* CCFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3F1763D4DC001573D7 /* CCFeed.m */; };
+		BCC4FF451764D583001573D7 /* bible.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3096A7175AE5390019129F /* bible.plist */; };
+		BCC4FF4717650580001573D7 /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC4FF4617650580001573D7 /* ccmc_banner2.png */; };
+		BCC4FF4A17650903001573D7 /* CCMediaPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */; };
+		BCC4FF4C17652608001573D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC4FF4B17652607001573D7 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,18 +95,29 @@
 		BC309699175A6F7F0019129F /* CCMainMenuStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainMenuStore.m; sourceTree = "<group>"; };
 		BC30969B175A72250019129F /* CCMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuItem.h; sourceTree = "<group>"; };
 		BC30969C175A72250019129F /* CCMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuItem.m; sourceTree = "<group>"; };
-		BC30969E175AC7710019129F /* ccmc_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner.png; sourceTree = "<group>"; };
 		BC3096A0175ACD0B0019129F /* CCStudies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudies.h; sourceTree = "<group>"; };
 		BC3096A1175ACD0B0019129F /* CCStudies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudies.m; sourceTree = "<group>"; };
 		BC3096A4175AE0A80019129F /* CCBibleBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBibleBookViewController.h; sourceTree = "<group>"; };
 		BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBibleBookViewController.m; sourceTree = "<group>"; };
 		BC3096A7175AE5390019129F /* bible.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bible.plist; sourceTree = "<group>"; };
+		BC372E791768DCC100ACC6B2 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		BC372E7A1768DCC100ACC6B2 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		BC372E7C1768DE1E00ACC6B2 /* CCNewsFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsFeed.h; sourceTree = "<group>"; };
+		BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsFeed.m; sourceTree = "<group>"; };
+		BC4A95431772D1B6004EF63D /* CCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsViewController.h; sourceTree = "<group>"; };
+		BC4A95441772D1B6004EF63D /* CCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsViewController.m; sourceTree = "<group>"; };
+		BC4A954717752823004EF63D /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/CCNewsDetailViewController.h; sourceTree = "<group>"; };
+		BC4A954917752823004EF63D /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/CCNewsDetailViewController.m; sourceTree = "<group>"; };
 		BC75656F176013E300CE64BF /* CCSermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonModel.h; sourceTree = "<group>"; };
 		BC756570176013E300CE64BF /* CCSermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSermonModel.m; sourceTree = "<group>"; };
 		BC7565721760154700CE64BF /* CCSermonStudyStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonStudyStore.h; sourceTree = "<group>"; };
 		BC7565731760154700CE64BF /* CCSermonStudyStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSermonStudyStore.m; sourceTree = "<group>"; };
 		BC756575176018D200CE64BF /* CCRecentFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecentFeed.h; sourceTree = "<group>"; };
 		BC756576176018D300CE64BF /* CCRecentFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecentFeed.m; sourceTree = "<group>"; };
+		BC7A66671772AD65003642E1 /* CalvaryiPhoneApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalvaryiPhoneApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7A66681772AD65003642E1 /* CalvaryiPhoneApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CalvaryiPhoneApp copy-Info.plist"; path = "/Users/wjshea/dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		BC86D84E176A43BF00348353 /* CCNewsFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsFeedManager.h; sourceTree = "<group>"; };
+		BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsFeedManager.m; sourceTree = "<group>"; };
 		BC8F0000175FC0E0007759CB /* current_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_response.json; sourceTree = "<group>"; };
 		BC9CC96517504B71000EBF05 /* CalvaryiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalvaryiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9CC96817504B71000EBF05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -94,13 +151,30 @@
 		BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFeedManager.m; sourceTree = "<group>"; };
 		BCC4FF3E1763D4DC001573D7 /* CCFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeed.h; sourceTree = "<group>"; };
 		BCC4FF3F1763D4DC001573D7 /* CCFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFeed.m; sourceTree = "<group>"; };
+		BCC4FF4617650580001573D7 /* ccmc_banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner2.png; sourceTree = "<group>"; };
+		BCC4FF4817650903001573D7 /* CCMediaPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMediaPlayerViewController.h; sourceTree = "<group>"; };
+		BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMediaPlayerViewController.m; sourceTree = "<group>"; };
+		BCC4FF4B17652607001573D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC7A66501772AD65003642E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7A66511772AD65003642E1 /* AVFoundation.framework in Frameworks */,
+				BC7A66521772AD65003642E1 /* UIKit.framework in Frameworks */,
+				BC7A66531772AD65003642E1 /* Foundation.framework in Frameworks */,
+				BC7A66541772AD65003642E1 /* CoreGraphics.framework in Frameworks */,
+				BC7A66551772AD65003642E1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC9CC96217504B71000EBF05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC4FF4C17652608001573D7 /* AVFoundation.framework in Frameworks */,
 				BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */,
 				BC9CC96B17504B71000EBF05 /* Foundation.framework in Frameworks */,
 				BC9CC96D17504B71000EBF05 /* CoreGraphics.framework in Frameworks */,
@@ -144,6 +218,12 @@
 				BC9CC98417504B71000EBF05 /* CCFirstViewController.m */,
 				BC3096A4175AE0A80019129F /* CCBibleBookViewController.h */,
 				BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */,
+				BCC4FF4817650903001573D7 /* CCMediaPlayerViewController.h */,
+				BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */,
+				BC4A95431772D1B6004EF63D /* CCNewsViewController.h */,
+				BC4A95441772D1B6004EF63D /* CCNewsViewController.m */,
+				BC4A954617752823004EF63D /* CCNewsDetailViewController.h */,
+				BC4A954817752823004EF63D /* CCNewsDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -159,10 +239,12 @@
 		BC9CC95C17504B71000EBF05 = {
 			isa = PBXGroup;
 			children = (
+				BCC4FF4B17652607001573D7 /* AVFoundation.framework */,
 				BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */,
 				BC9CC96717504B71000EBF05 /* Frameworks */,
 				BC9CC96617504B71000EBF05 /* Products */,
 				3FF9844296524232AF8C9829 /* Pods.xcconfig */,
+				BC7A66681772AD65003642E1 /* CalvaryiPhoneApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				BC9CC96517504B71000EBF05 /* CalvaryiPhoneApp.app */,
+				BC7A66671772AD65003642E1 /* CalvaryiPhoneApp copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,7 +289,7 @@
 		BC9CC96F17504B71000EBF05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC30969E175AC7710019129F /* ccmc_banner.png */,
+				BCC4FF4617650580001573D7 /* ccmc_banner2.png */,
 				BC9CC97017504B71000EBF05 /* CalvaryiPhoneApp-Info.plist */,
 				BC9CC97117504B71000EBF05 /* InfoPlist.strings */,
 				BC9CC97417504B71000EBF05 /* main.m */,
@@ -230,6 +313,12 @@
 				BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */,
 				BCC4FF3E1763D4DC001573D7 /* CCFeed.h */,
 				BCC4FF3F1763D4DC001573D7 /* CCFeed.m */,
+				BC372E791768DCC100ACC6B2 /* NewsModel.h */,
+				BC372E7A1768DCC100ACC6B2 /* NewsModel.m */,
+				BC372E7C1768DE1E00ACC6B2 /* CCNewsFeed.h */,
+				BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */,
+				BC86D84E176A43BF00348353 /* CCNewsFeedManager.h */,
+				BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -237,6 +326,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BC7A66381772AD65003642E1 /* CalvaryiPhoneApp - Test Flight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7A66641772AD65003642E1 /* Build configuration list for PBXNativeTarget "CalvaryiPhoneApp - Test Flight" */;
+			buildPhases = (
+				BC7A66391772AD65003642E1 /* Check Pods Manifest.lock */,
+				BC7A663A1772AD65003642E1 /* Sources */,
+				BC7A66501772AD65003642E1 /* Frameworks */,
+				BC7A66561772AD65003642E1 /* Resources */,
+				BC7A66631772AD65003642E1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CalvaryiPhoneApp - Test Flight";
+			productName = CalvaryiPhoneApp;
+			productReference = BC7A66671772AD65003642E1 /* CalvaryiPhoneApp copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BC9CC96417504B71000EBF05 /* CalvaryiPhoneApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC9CC99317504B71000EBF05 /* Build configuration list for PBXNativeTarget "CalvaryiPhoneApp" */;
@@ -279,11 +387,31 @@
 			projectRoot = "";
 			targets = (
 				BC9CC96417504B71000EBF05 /* CalvaryiPhoneApp */,
+				BC7A66381772AD65003642E1 /* CalvaryiPhoneApp - Test Flight */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BC7A66561772AD65003642E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7A66571772AD65003642E1 /* InfoPlist.strings in Resources */,
+				BC7A66581772AD65003642E1 /* Default.png in Resources */,
+				BC7A66591772AD65003642E1 /* Default@2x.png in Resources */,
+				BC7A665A1772AD65003642E1 /* Default-568h@2x.png in Resources */,
+				BC7A665B1772AD65003642E1 /* MainStoryboard.storyboard in Resources */,
+				BC7A665C1772AD65003642E1 /* first.png in Resources */,
+				BC7A665D1772AD65003642E1 /* bible.plist in Resources */,
+				BC7A665E1772AD65003642E1 /* first@2x.png in Resources */,
+				BC7A665F1772AD65003642E1 /* second.png in Resources */,
+				BC7A66601772AD65003642E1 /* second@2x.png in Resources */,
+				BC7A66611772AD65003642E1 /* current_response.json in Resources */,
+				BC7A66621772AD65003642E1 /* ccmc_banner2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC9CC96317504B71000EBF05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,10 +422,12 @@
 				BC9CC97F17504B71000EBF05 /* Default-568h@2x.png in Resources */,
 				BC9CC98217504B71000EBF05 /* MainStoryboard.storyboard in Resources */,
 				BC9CC98717504B71000EBF05 /* first.png in Resources */,
+				BCC4FF451764D583001573D7 /* bible.plist in Resources */,
 				BC9CC98917504B71000EBF05 /* first@2x.png in Resources */,
 				BC9CC98E17504B71000EBF05 /* second.png in Resources */,
 				BC9CC99017504B71000EBF05 /* second@2x.png in Resources */,
 				BC8F0001175FC0E0007759CB /* current_response.json in Resources */,
+				BCC4FF4717650580001573D7 /* ccmc_banner2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +448,34 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 		};
+		BC7A66391772AD65003642E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		BC7A66631772AD65003642E1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		E2E0DAB594DC4FF4955819A1 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +493,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BC7A663A1772AD65003642E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7A663B1772AD65003642E1 /* CCBibleBookViewController.m in Sources */,
+				BC7A663C1772AD65003642E1 /* CCStudies.m in Sources */,
+				BC7A663D1772AD65003642E1 /* CCMenuItem.m in Sources */,
+				BC7A663E1772AD65003642E1 /* CCMainMenuStore.m in Sources */,
+				BC7A663F1772AD65003642E1 /* CCStudiesStore.m in Sources */,
+				BC7A66401772AD65003642E1 /* main.m in Sources */,
+				BC7A66411772AD65003642E1 /* CCAppDelegate.m in Sources */,
+				BC7A66421772AD65003642E1 /* CCFirstViewController.m in Sources */,
+				BC7A66431772AD65003642E1 /* CCSecondViewController.m in Sources */,
+				BC7A66441772AD65003642E1 /* CCRemoteListViewController.m in Sources */,
+				BC7A66451772AD65003642E1 /* CCSermonModel.m in Sources */,
+				BC7A66461772AD65003642E1 /* CCSermonStudyStore.m in Sources */,
+				BC7A66471772AD65003642E1 /* CCRecentFeed.m in Sources */,
+				BC7A66481772AD65003642E1 /* SermonModel.m in Sources */,
+				BC7A66491772AD65003642E1 /* CCFeedImageStore.m in Sources */,
+				BC7A664A1772AD65003642E1 /* CCFeedManager.m in Sources */,
+				BC7A664B1772AD65003642E1 /* CCFeed.m in Sources */,
+				BC7A664C1772AD65003642E1 /* CCMediaPlayerViewController.m in Sources */,
+				BC7A664D1772AD65003642E1 /* NewsModel.m in Sources */,
+				BC7A664E1772AD65003642E1 /* CCNewsFeed.m in Sources */,
+				BC7A664F1772AD65003642E1 /* CCNewsFeedManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC9CC96117504B71000EBF05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,12 +542,33 @@
 				BCC4FF3A1762D37C001573D7 /* CCFeedImageStore.m in Sources */,
 				BCC4FF3D1763CC1B001573D7 /* CCFeedManager.m in Sources */,
 				BCC4FF401763D4DC001573D7 /* CCFeed.m in Sources */,
+				BCC4FF4A17650903001573D7 /* CCMediaPlayerViewController.m in Sources */,
+				BC372E7B1768DCC100ACC6B2 /* NewsModel.m in Sources */,
+				BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */,
+				BC86D850176A43C000348353 /* CCNewsFeedManager.m in Sources */,
+				BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		BC4A954617752823004EF63D /* CCNewsDetailViewController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC4A954717752823004EF63D /* en */,
+			);
+			name = CCNewsDetailViewController.h;
+			sourceTree = "<group>";
+		};
+		BC4A954817752823004EF63D /* CCNewsDetailViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC4A954917752823004EF63D /* en */,
+			);
+			name = CCNewsDetailViewController.m;
+			sourceTree = "<group>";
+		};
 		BC9CC97117504B71000EBF05 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -381,6 +588,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BC7A66651772AD65003642E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF9844296524232AF8C9829 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalvaryiPhoneApp/CalvaryiPhoneApp-Prefix.pch";
+				INFOPLIST_FILE = "CalvaryiPhoneApp copy-Info.plist";
+				PRODUCT_NAME = "CalvaryiPhoneApp copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC7A66661772AD65003642E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF9844296524232AF8C9829 /* Pods.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Shea (VKFZ3L477B)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalvaryiPhoneApp/CalvaryiPhoneApp-Prefix.pch";
+				INFOPLIST_FILE = "CalvaryiPhoneApp copy-Info.plist";
+				PRODUCT_NAME = "CalvaryiPhoneApp copy";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "79EB5C16-05B2-40D7-AC20-D0B6183B9546";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		BC9CC99117504B71000EBF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +697,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC7A66641772AD65003642E1 /* Build configuration list for PBXNativeTarget "CalvaryiPhoneApp - Test Flight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7A66651772AD65003642E1 /* Debug */,
+				BC7A66661772AD65003642E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BC9CC96017504B71000EBF05 /* Build configuration list for PBXProject "CalvaryiPhoneApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

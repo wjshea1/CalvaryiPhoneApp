@@ -45,4 +45,9 @@
     return img;
 }
 
+-(UIImage *)getImageForURL:(NSString *)url withCompletion: completion
+{
+    
+}
+
 @end
