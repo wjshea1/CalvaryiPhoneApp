@@ -11,6 +11,16 @@
 		BC372E7B1768DCC100ACC6B2 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7A1768DCC100ACC6B2 /* NewsModel.m */; };
 		BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */; };
 		BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A95441772D1B6004EF63D /* CCNewsViewController.m */; };
+		BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */; };
+		BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A954E177655A5004EF63D /* ccmc_banner2.png */; };
+		BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A954F177655A5004EF63D /* ccmc_banner3.png */; };
+		BC4A9554177655A5004EF63D /* versebyverse.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A9550177655A5004EF63D /* versebyverse.png */; };
+		BC4A9555177655A5004EF63D /* versebyversex2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A9551177655A5004EF63D /* versebyversex2.png */; };
+		BC4A955717766BA7004EF63D /* ccmc_default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955617766BA7004EF63D /* ccmc_default.png */; };
+		BC4A955B17766D9B004EF63D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955A17766D9B004EF63D /* calendar.png */; };
+		BC4A955D17766E30004EF63D /* multiple.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955C17766E30004EF63D /* multiple.png */; };
+		BC4A955F17766E7B004EF63D /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955E17766E7B004EF63D /* bookmark.png */; };
+		BC4A956117766E97004EF63D /* speaker-electric.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A956017766E97004EF63D /* speaker-electric.png */; };
 		BC756571176013E300CE64BF /* CCSermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756570176013E300CE64BF /* CCSermonModel.m */; };
 		BC7565741760154700CE64BF /* CCSermonStudyStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7565731760154700CE64BF /* CCSermonStudyStore.m */; };
 		BC756577176018D300CE64BF /* CCRecentFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756576176018D300CE64BF /* CCRecentFeed.m */; };
@@ -106,8 +116,18 @@
 		BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsFeed.m; sourceTree = "<group>"; };
 		BC4A95431772D1B6004EF63D /* CCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsViewController.h; sourceTree = "<group>"; };
 		BC4A95441772D1B6004EF63D /* CCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsViewController.m; sourceTree = "<group>"; };
-		BC4A954717752823004EF63D /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/CCNewsDetailViewController.h; sourceTree = "<group>"; };
-		BC4A954917752823004EF63D /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/CCNewsDetailViewController.m; sourceTree = "<group>"; };
+		BC4A954A17753509004EF63D /* CCNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsDetailViewController.h; sourceTree = "<group>"; };
+		BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsDetailViewController.m; sourceTree = "<group>"; };
+		BC4A954E177655A5004EF63D /* ccmc_banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner2.png; sourceTree = "<group>"; };
+		BC4A954F177655A5004EF63D /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
+		BC4A9550177655A5004EF63D /* versebyverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versebyverse.png; sourceTree = "<group>"; };
+		BC4A9551177655A5004EF63D /* versebyversex2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versebyversex2.png; sourceTree = "<group>"; };
+		BC4A955617766BA7004EF63D /* ccmc_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default.png; sourceTree = "<group>"; };
+		BC4A955817766C7F004EF63D /* ccmc_default.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccmc_default.pxm; sourceTree = "<group>"; };
+		BC4A955A17766D9B004EF63D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/calendar.png"; sourceTree = "<group>"; };
+		BC4A955C17766E30004EF63D /* multiple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiple.png; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/multiple.png"; sourceTree = "<group>"; };
+		BC4A955E17766E7B004EF63D /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/bookmark.png"; sourceTree = "<group>"; };
+		BC4A956017766E97004EF63D /* speaker-electric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker-electric.png"; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/speaker-electric.png"; sourceTree = "<group>"; };
 		BC75656F176013E300CE64BF /* CCSermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonModel.h; sourceTree = "<group>"; };
 		BC756570176013E300CE64BF /* CCSermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSermonModel.m; sourceTree = "<group>"; };
 		BC7565721760154700CE64BF /* CCSermonStudyStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonStudyStore.h; sourceTree = "<group>"; };
@@ -136,11 +156,11 @@
 		BC9CC98317504B71000EBF05 /* CCFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCFirstViewController.h; sourceTree = "<group>"; };
 		BC9CC98417504B71000EBF05 /* CCFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCFirstViewController.m; sourceTree = "<group>"; };
 		BC9CC98617504B71000EBF05 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		BC9CC98817504B71000EBF05 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		BC9CC98817504B71000EBF05 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "../../dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp/first@2x.png"; sourceTree = "<group>"; };
 		BC9CC98A17504B71000EBF05 /* CCSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSecondViewController.h; sourceTree = "<group>"; };
 		BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSecondViewController.m; sourceTree = "<group>"; };
-		BC9CC98D17504B71000EBF05 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		BC9CC98F17504B71000EBF05 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BC9CC98D17504B71000EBF05 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = ../../dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp/second.png; sourceTree = "<group>"; };
+		BC9CC98F17504B71000EBF05 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "../../dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp/second@2x.png"; sourceTree = "<group>"; };
 		BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRemoteListViewController.h; sourceTree = "<group>"; };
 		BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRemoteListViewController.m; sourceTree = "<group>"; };
 		BCC4FF3517615E30001573D7 /* SermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonModel.h; sourceTree = "<group>"; };
@@ -222,10 +242,31 @@
 				BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */,
 				BC4A95431772D1B6004EF63D /* CCNewsViewController.h */,
 				BC4A95441772D1B6004EF63D /* CCNewsViewController.m */,
-				BC4A954617752823004EF63D /* CCNewsDetailViewController.h */,
-				BC4A954817752823004EF63D /* CCNewsDetailViewController.m */,
+				BC4A954A17753509004EF63D /* CCNewsDetailViewController.h */,
+				BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BC4A954D177655A5004EF63D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BC4A956017766E97004EF63D /* speaker-electric.png */,
+				BC4A955E17766E7B004EF63D /* bookmark.png */,
+				BC4A955C17766E30004EF63D /* multiple.png */,
+				BC4A955A17766D9B004EF63D /* calendar.png */,
+				BC4A955817766C7F004EF63D /* ccmc_default.pxm */,
+				BC4A955617766BA7004EF63D /* ccmc_default.png */,
+				BC9CC98817504B71000EBF05 /* first@2x.png */,
+				BC9CC98D17504B71000EBF05 /* second.png */,
+				BC9CC98F17504B71000EBF05 /* second@2x.png */,
+				BC4A954E177655A5004EF63D /* ccmc_banner2.png */,
+				BC4A954F177655A5004EF63D /* ccmc_banner3.png */,
+				BC4A9550177655A5004EF63D /* versebyverse.png */,
+				BC4A9551177655A5004EF63D /* versebyversex2.png */,
+			);
+			name = images;
+			path = ../../../../Documents/images;
 			sourceTree = "<group>";
 		};
 		BC8FFFFF175FC0C2007759CB /* Test Data */ = {
@@ -278,9 +319,6 @@
 				BC9CC97817504B71000EBF05 /* CCAppDelegate.m */,
 				BC9CC98017504B71000EBF05 /* MainStoryboard.storyboard */,
 				BC9CC98617504B71000EBF05 /* first.png */,
-				BC9CC98817504B71000EBF05 /* first@2x.png */,
-				BC9CC98D17504B71000EBF05 /* second.png */,
-				BC9CC98F17504B71000EBF05 /* second@2x.png */,
 				BC9CC96F17504B71000EBF05 /* Supporting Files */,
 			);
 			path = CalvaryiPhoneApp;
@@ -289,6 +327,7 @@
 		BC9CC96F17504B71000EBF05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC4A954D177655A5004EF63D /* images */,
 				BCC4FF4617650580001573D7 /* ccmc_banner2.png */,
 				BC9CC97017504B71000EBF05 /* CalvaryiPhoneApp-Info.plist */,
 				BC9CC97117504B71000EBF05 /* InfoPlist.strings */,
@@ -428,6 +467,15 @@
 				BC9CC99017504B71000EBF05 /* second@2x.png in Resources */,
 				BC8F0001175FC0E0007759CB /* current_response.json in Resources */,
 				BCC4FF4717650580001573D7 /* ccmc_banner2.png in Resources */,
+				BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */,
+				BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */,
+				BC4A9554177655A5004EF63D /* versebyverse.png in Resources */,
+				BC4A9555177655A5004EF63D /* versebyversex2.png in Resources */,
+				BC4A955717766BA7004EF63D /* ccmc_default.png in Resources */,
+				BC4A955B17766D9B004EF63D /* calendar.png in Resources */,
+				BC4A955D17766E30004EF63D /* multiple.png in Resources */,
+				BC4A955F17766E7B004EF63D /* bookmark.png in Resources */,
+				BC4A956117766E97004EF63D /* speaker-electric.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,28 +595,13 @@
 				BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */,
 				BC86D850176A43C000348353 /* CCNewsFeedManager.m in Sources */,
 				BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */,
+				BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC4A954617752823004EF63D /* CCNewsDetailViewController.h */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC4A954717752823004EF63D /* en */,
-			);
-			name = CCNewsDetailViewController.h;
-			sourceTree = "<group>";
-		};
-		BC4A954817752823004EF63D /* CCNewsDetailViewController.m */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC4A954917752823004EF63D /* en */,
-			);
-			name = CCNewsDetailViewController.m;
-			sourceTree = "<group>";
-		};
 		BC9CC97117504B71000EBF05 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

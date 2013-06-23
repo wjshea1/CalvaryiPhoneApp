@@ -9,6 +9,7 @@
 #import "CCNewsViewController.h"
 #import "CCNewsFeedManager.h"
 #import "MBProgressHUD.h"
+#import "CCNewsDetailViewController.h"
 
 @interface CCNewsViewController ()
 
@@ -35,7 +36,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    NSString *requestUrl = @"http://localhost:8080/Calvary/feeds/news";
+    
+    // Need to put this in a plist
+    NSString *requestUrl = @"http://calvary.cloudfoundry.com/feeds/news";
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     CCNewsFeedManager *myManager = [CCNewsFeedManager sharedManager];
@@ -140,6 +143,11 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    CCNewsDetailViewController *destView = segue.destinationViewController;
+    NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+    CCNewsFeedManager *myManager = [CCNewsFeedManager sharedManager];
+    NewsModel *item = [myManager objectInCurrentAtIndex:[indexPath row]];
+    destView.item = item;
 
 }
 

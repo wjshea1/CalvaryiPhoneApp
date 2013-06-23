@@ -40,7 +40,8 @@
     if ( !img ) {
         // Retrieve Image
         img = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
-        [_dict setObject:img forKey:url];
+        if (img) // Dont load nil image - that is not nice
+            [_dict setObject:img forKey:url];
     }
     return img;
 }
