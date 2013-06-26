@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7782986B84FA4A33AC0B121F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B050C7BD24ABA99A73187 /* libPods.a */; };
+		BC05995117779AF000366683 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC05995017779AF000366683 /* Social.framework */; };
 		BC372E7B1768DCC100ACC6B2 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7A1768DCC100ACC6B2 /* NewsModel.m */; };
 		BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */; };
+		BC41D82C177B53560057DBF0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D82B177B53560057DBF0 /* CoreMedia.framework */; };
 		BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A95441772D1B6004EF63D /* CCNewsViewController.m */; };
 		BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */; };
 		BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A954E177655A5004EF63D /* ccmc_banner2.png */; };
@@ -99,6 +101,7 @@
 /* Begin PBXFileReference section */
 		124B050C7BD24ABA99A73187 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF9844296524232AF8C9829 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BC05995017779AF000366683 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BC3096951752CE240019129F /* CCStudiesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudiesStore.h; sourceTree = "<group>"; };
 		BC3096961752CE240019129F /* CCStudiesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudiesStore.m; sourceTree = "<group>"; };
 		BC309698175A6F7F0019129F /* CCMainMenuStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainMenuStore.h; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		BC372E7A1768DCC100ACC6B2 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		BC372E7C1768DE1E00ACC6B2 /* CCNewsFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsFeed.h; sourceTree = "<group>"; };
 		BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsFeed.m; sourceTree = "<group>"; };
+		BC41D82B177B53560057DBF0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BC4A95431772D1B6004EF63D /* CCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsViewController.h; sourceTree = "<group>"; };
 		BC4A95441772D1B6004EF63D /* CCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsViewController.m; sourceTree = "<group>"; };
 		BC4A954A17753509004EF63D /* CCNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsDetailViewController.h; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC41D82C177B53560057DBF0 /* CoreMedia.framework in Frameworks */,
+				BC05995117779AF000366683 /* Social.framework in Frameworks */,
 				BCC4FF4C17652608001573D7 /* AVFoundation.framework in Frameworks */,
 				BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */,
 				BC9CC96B17504B71000EBF05 /* Foundation.framework in Frameworks */,
@@ -280,6 +286,8 @@
 		BC9CC95C17504B71000EBF05 = {
 			isa = PBXGroup;
 			children = (
+				BC41D82B177B53560057DBF0 /* CoreMedia.framework */,
+				BC05995017779AF000366683 /* Social.framework */,
 				BCC4FF4B17652607001573D7 /* AVFoundation.framework */,
 				BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */,
 				BC9CC96717504B71000EBF05 /* Frameworks */,

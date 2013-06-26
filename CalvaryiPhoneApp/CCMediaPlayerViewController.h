@@ -13,22 +13,35 @@
 @interface CCMediaPlayerViewController : UIViewController
 
 {
+    float mRestoreAfterScrubbingRate;
+	BOOL seekToZeroBeforePlay;
+	id mTimeObserver;
+
+    
 }
 @property(strong, nonatomic)NSURL *soundFileURL;
 @property(strong, nonatomic) SermonModel *item;
 @property (strong, nonatomic) IBOutlet UIImageView *imageViewAlbumArt;
 
-@property (strong, nonatomic) IBOutlet UIProgressView *porgressBar;
 @property (strong, nonatomic) IBOutlet UILabel *titleTrack;
 @property (strong, nonatomic) IBOutlet UITextView *summary;
 @property (strong, nonatomic) IBOutlet UIButton *buttonPlayPause;
 @property (strong, nonatomic)AVAudioPlayer *myAudioPlayer;
 @property (strong, nonatomic) AVPlayer *streamingPlayer;
 @property (nonatomic) bool isPlaying;
+@property (strong, nonatomic) IBOutlet UISlider *scrubber;
+@property (strong, nonatomic) AVPlayerItem *playerItem;
 - (IBAction)pressButtonBack:(id)sender;
 - (IBAction)pressButtonPlayPause:(id)sender;
 - (IBAction)pressButtonForward:(id)sender;
+- (IBAction)beginScrub:(id)sender;
+- (IBAction)endScrub:(id)sender;
+- (void)syncScrubber;
 
 
 
 @end
+
+static void *CCMediaPlayerkViewControllerRateObservationContext = &CCMediaPlayerkViewControllerRateObservationContext;
+static void *CCMediaPlayerViewControllerStatusObservationContext = &CCMediaPlayerViewControllerStatusObservationContext;
+static void *CCMediaPlayerViewControllerCurrentItemObservationContext = &CCMediaPlayerViewControllerCurrentItemObservationContext;

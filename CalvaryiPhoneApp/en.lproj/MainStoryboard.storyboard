@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -115,8 +115,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAx-Ll-TTU">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="AiG-WM-17K"/>
                                     <constraint firstAttribute="width" constant="240" id="dtn-MU-K7O"/>
-                                    <constraint firstAttribute="height" constant="128" id="mU3-Ro-B6C"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3v-r3-2Di">
@@ -180,28 +180,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Va3-59-gcB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="rj7-Fn-nuL"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="beginScrub:" destination="Wh6-yi-1QQ" eventType="touchDown" id="aF3-ij-m8X"/>
+                                    <action selector="endScrub:" destination="Wh6-yi-1QQ" eventType="valueChanged" id="XPQ-gy-an3"/>
+                                    <action selector="endScrub:" destination="Wh6-yi-1QQ" eventType="touchUpInside" id="Yxz-Rc-gMt"/>
+                                    <action selector="endScrub:" destination="Wh6-yi-1QQ" eventType="touchUpOutside" id="mp3-Xj-QKQ"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Va3-59-gcB" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" constant="178" id="2a8-3g-mvM"/>
+                            <constraint firstItem="Va3-59-gcB" firstAttribute="leading" secondItem="mdQ-Lf-Ot2" secondAttribute="leading" type="default" id="49w-pm-tPN"/>
                             <constraint firstItem="Umq-r7-jBp" firstAttribute="centerX" secondItem="Bzk-38-yIB" secondAttribute="centerX" type="default" id="606-q6-1X1"/>
+                            <constraint firstItem="Va3-59-gcB" firstAttribute="trailing" secondItem="rAx-Ll-TTU" secondAttribute="trailing" type="default" id="9pZ-KV-Jon"/>
                             <constraint firstAttribute="bottom" secondItem="f3v-r3-2Di" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Cgv-cz-Lbe"/>
                             <constraint firstItem="f3v-r3-2Di" firstAttribute="leading" secondItem="6B8-Zo-heR" secondAttribute="leading" constant="43" id="Jws-OV-1pu"/>
-                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" constant="33" id="Q3Z-G2-CXp"/>
+                            <constraint firstItem="Va3-59-gcB" firstAttribute="trailing" secondItem="Umq-r7-jBp" secondAttribute="trailing" type="default" id="Ovn-2v-Sjj"/>
                             <constraint firstItem="rAx-Ll-TTU" firstAttribute="leading" secondItem="Umq-r7-jBp" secondAttribute="leading" type="default" id="Udd-9E-akD"/>
-                            <constraint firstItem="mdQ-Lf-Ot2" firstAttribute="centerY" secondItem="6B8-Zo-heR" secondAttribute="centerY" type="default" id="eBl-az-I5x"/>
-                            <constraint firstAttribute="bottom" secondItem="Umq-r7-jBp" secondAttribute="bottom" constant="107" id="fXw-BC-lRU"/>
-                            <constraint firstItem="mdQ-Lf-Ot2" firstAttribute="centerX" secondItem="6B8-Zo-heR" secondAttribute="centerX" type="default" id="hnt-NG-iJK"/>
-                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="trailing" secondItem="Umq-r7-jBp" secondAttribute="trailing" type="default" id="hyz-ma-wx8"/>
+                            <constraint firstItem="mdQ-Lf-Ot2" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" constant="214" id="X0V-rl-odZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Umq-r7-jBp" secondAttribute="bottom" constant="93" id="eXp-n4-rmV"/>
+                            <constraint firstItem="mdQ-Lf-Ot2" firstAttribute="centerX" secondItem="6B8-Zo-heR" secondAttribute="centerX" type="default" id="h25-iC-3Dv"/>
+                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="iEn-Fs-WOA"/>
                             <constraint firstAttribute="bottom" secondItem="Bzk-38-yIB" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="mKl-1I-0Q8"/>
                             <constraint firstAttribute="trailing" secondItem="PgB-Gr-l0A" secondAttribute="trailing" constant="48" id="v8X-Pc-Fl7"/>
                             <constraint firstAttribute="bottom" secondItem="PgB-Gr-l0A" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xMI-hW-H6P"/>
-                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="leading" secondItem="6B8-Zo-heR" secondAttribute="leading" constant="38" id="z7g-iD-N7W"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Audio Player" id="xxe-Wq-5OC"/>
                     <connections>
                         <outlet property="buttonPlayPause" destination="Bzk-38-yIB" id="JUJ-Jx-V42"/>
                         <outlet property="imageViewAlbumArt" destination="rAx-Ll-TTU" id="w0x-VO-CHV"/>
+                        <outlet property="scrubber" destination="Va3-59-gcB" id="JQW-fq-Xom"/>
                         <outlet property="summary" destination="Umq-r7-jBp" id="7Dy-2x-cge"/>
                         <outlet property="titleTrack" destination="mdQ-Lf-Ot2" id="3k2-q8-Qx0"/>
                     </connections>
@@ -359,7 +373,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="aDQ-KD-vmC"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -618,53 +632,6 @@
         <image name="second@2x.png" width="60" height="60"/>
         <image name="speaker-electric.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="CCBibleBookViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CCBibleBookViewController.h"/>
-        </class>
-        <class className="CCFirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CCFirstViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="CCMediaPlayerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CCMediaPlayerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="pressButtonBack:"/>
-                <relationship kind="action" name="pressButtonForward:"/>
-                <relationship kind="action" name="pressButtonPlayPause:"/>
-                <relationship kind="outlet" name="buttonPlayPause" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="imageViewAlbumArt" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="porgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="summary" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="titleTrack" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CCNewsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CCNewsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clickLearnMoreAction:"/>
-                <relationship kind="action" name="clickShareButton:"/>
-                <relationship kind="outlet" name="date" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="description" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="headline" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="CCNewsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CCNewsViewController.h"/>
-        </class>
-        <class className="CCRemoteListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CCRemoteListViewController.h"/>
-        </class>
-        <class className="CCSecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CCSecondViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

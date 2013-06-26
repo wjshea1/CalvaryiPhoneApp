@@ -7,6 +7,7 @@
 //
 
 #import "CCNewsDetailViewController.h"
+#import <Social/Social.h>
 
 @interface CCNewsDetailViewController ()
 
@@ -56,6 +57,13 @@
 
 
 - (IBAction)clickShareButton:(id)sender {
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [controller setInitialText:_item.headline];
+        [controller addURL:[NSURL URLWithString:_item.internetLink]];
+        [self presentViewController:controller animated:YES completion:Nil];
+    }
 }
 - (IBAction)clickLearnMoreAction:(id)sender {
     
