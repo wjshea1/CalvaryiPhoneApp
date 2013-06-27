@@ -118,6 +118,7 @@
 		BC372E7C1768DE1E00ACC6B2 /* CCNewsFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsFeed.h; sourceTree = "<group>"; };
 		BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsFeed.m; sourceTree = "<group>"; };
 		BC41D82B177B53560057DBF0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BC41D82D177B9C8D0057DBF0 /* CalvaryiPhoneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CalvaryiPhoneApp.entitlements; sourceTree = "<group>"; };
 		BC4A95431772D1B6004EF63D /* CCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsViewController.h; sourceTree = "<group>"; };
 		BC4A95441772D1B6004EF63D /* CCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsViewController.m; sourceTree = "<group>"; };
 		BC4A954A17753509004EF63D /* CCNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsDetailViewController.h; sourceTree = "<group>"; };
@@ -320,6 +321,7 @@
 		BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC41D82D177B9C8D0057DBF0 /* CalvaryiPhoneApp.entitlements */,
 				BC8FFFFF175FC0C2007759CB /* Test Data */,
 				BC3096A3175AE04F0019129F /* Controllers */,
 				BC3096941752C4C10019129F /* Models */,
@@ -667,7 +669,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: William Shea (P3H8945VD3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Shea (VKFZ3L477B)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -682,6 +685,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1152FEB0-E298-45A7-A8C7-3C0D57516010";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "79EB5C16-05B2-40D7-AC20-D0B6183B9546";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -698,7 +703,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: William Shea (QA73279JPG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: William Shea (QA73279JPG)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -706,6 +712,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
