@@ -8,14 +8,22 @@
 
 #import "CCAppDelegate.h"
 
+
 @implementation CCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Remove this line in production mode
     // Override point for customization after application launch.
-    UIColor * color = [UIColor colorWithRed:60/255.0f green:175/255.0f blue:45/255.0f alpha:1.0f];
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+    
+    [TestFlight takeOff:@"8057fe77-2de5-4683-9cfa-08dd29cc4a05"];
+    
+    UIColor *color = [UIColor colorWithRed:7.0f/255.0f green:55.0f/255.0f blue:99.0f/255.0f alpha:1.0];
+    UIColor *fontColor = [UIColor colorWithRed:241.0f/255.0f green:194.0f/255.0f blue:50.0f/255.0f alpha:1.0];
   //  UIColor * color = [UIColor colorWithRed:60/255.0f green:204/255.0f blue:0/255.0f alpha:1.0f];
      [[UINavigationBar appearance] setTintColor:color];
+     
     return YES;
 }
 							

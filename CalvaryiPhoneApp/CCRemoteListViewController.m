@@ -88,8 +88,10 @@
 
     // Return the number of rows in the section.
     CCFeedManager *myManager = [CCFeedManager sharedManager];
-     
-    return [myManager getCurrentListCount];
+    int count = [myManager getCurrentListCount];
+    if ( count == 0 )
+        return 1;
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,11 +104,23 @@
     
   /*  CCSermonStudyStore *myStore = [CCSermonStudyStore sharedStoreWithView:self.view];
     SermonModel *sermon = [myStore getMenuItemAtIndex:[indexPath row]];*/
-    [[cell textLabel] setText:[sermon title]];
-    [[cell detailTextLabel] setText:[sermon summary]];
-    UIImage *image = [[CCFeedImageStore sharedStore] getImageForURL:sermon.imageFileLocation];
-    [[cell imageView] setImage:image];
     
+    int count = [myManager getCurrentListCount];
+    if ( count > 0 ){
+        [[cell textLabel] setText:[sermon title]];
+        [[cell detailTextLabel] setText:[sermon summary]];
+        UIImage *image = [[CCFeedImageStore sharedStore] getImageForURL:sermon.imageFileLocation];
+        [[cell imageView] setImage:image];
+    } else {
+        [[cell textLabel] setText:@"Coming Soon!!!"];
+        [[cell detailTextLabel] setText:@"We are moving more studies to the app soon!"];
+        
+        // Construction Image needs to be created
+       // UIImage *image = [[CCFeedImageStore sharedStore] getImageForURL:sermon.imageFileLocation];
+       // [[cell imageView] setImage:image];
+        
+    }
+        
     
     // Create Image Cache and URL by
     // UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:sermon.]]];
@@ -159,17 +173,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  //  [self performSegueWithIdentifier:@"REMOTE_LIST_VIEW_SEGUE_FROM_BOOKS" sender:self];
-    
+    CCFeedManager *myManager = [CCFeedManager sharedManager];
+    int count = [myManager getCurrentListCount];
+    if ( count > 0 ){
+        [self performSegueWithIdentifier:@"REMOTE_LIST_VIEW_SEGUE_FROM_BOOKS" sender:self];
+    }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    CCMediaPlayerViewController *destView = segue.destinationViewController;
-    NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
     CCFeedManager *myManager = [CCFeedManager sharedManager];
-    SermonModel *sermon = [myManager objectInCurrentAtIndex:[indexPath row]];
-    destView.item = sermon;
+    int count = [myManager getCurrentListCount];
+    if ( count > 0 ){
+
+        CCMediaPlayerViewController *destView = segue.destinationViewController;
+        NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        CCFeedManager *myManager = [CCFeedManager sharedManager];
+        SermonModel *sermon = [myManager objectInCurrentAtIndex:[indexPath row]];
+        destView.item = sermon;
+    }
     
 }
 

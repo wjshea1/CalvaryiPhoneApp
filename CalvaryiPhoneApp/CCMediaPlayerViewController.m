@@ -57,6 +57,7 @@ NSString * const kCurrentItemKey	= @"currentItem";
     NSURL *url = [[NSURL alloc] initWithString:_item.audioFileLocation];
     
     _streamingPlayer = [[AVPlayer alloc] initWithURL:url];
+
     
        
 

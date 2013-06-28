@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		7782986B84FA4A33AC0B121F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B050C7BD24ABA99A73187 /* libPods.a */; };
 		BC05995117779AF000366683 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC05995017779AF000366683 /* Social.framework */; };
+		BC075F81177BF62800B23B18 /* ccmc_default_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA40A99177BE8BC005CA3A7 /* ccmc_default_icon.png */; };
+		BC075F82177BF62F00B23B18 /* ccmc_default_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA40A9B177BE8F0005CA3A7 /* ccmc_default_icon_retina.png */; };
+		BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F83177CE52D00B23B18 /* ccmc_banner3.png */; };
+		BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F85177D242D00B23B18 /* calavaryIcon.png */; };
+		BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F87177D243200B23B18 /* calvaryiconretina.png */; };
+		BC075F8A177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */; };
+		BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F8B177D2CF100B23B18 /* ccbanner4.png */; };
 		BC372E7B1768DCC100ACC6B2 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7A1768DCC100ACC6B2 /* NewsModel.m */; };
 		BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */; };
 		BC41D82C177B53560057DBF0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D82B177B53560057DBF0 /* CoreMedia.framework */; };
@@ -63,7 +70,6 @@
 		BC7A665F1772AD65003642E1 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98D17504B71000EBF05 /* second.png */; };
 		BC7A66601772AD65003642E1 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98F17504B71000EBF05 /* second@2x.png */; };
 		BC7A66611772AD65003642E1 /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
-		BC7A66621772AD65003642E1 /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC4FF4617650580001573D7 /* ccmc_banner2.png */; };
 		BC86D850176A43C000348353 /* CCNewsFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */; };
 		BC8F0001175FC0E0007759CB /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
 		BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96817504B71000EBF05 /* UIKit.framework */; };
@@ -82,6 +88,7 @@
 		BC9CC98C17504B71000EBF05 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */; };
 		BC9CC98E17504B71000EBF05 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98D17504B71000EBF05 /* second.png */; };
 		BC9CC99017504B71000EBF05 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98F17504B71000EBF05 /* second@2x.png */; };
+		BCA40A9F177BEA26005CA3A7 /* CCMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */; };
 		BCA9C9D3175BF99E001E1D3C /* CCRemoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */; };
 		BCA9C9D5175BFBB7001E1D3C /* CCStudiesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096961752CE240019129F /* CCStudiesStore.m */; };
 		BCA9C9D6175BFBBE001E1D3C /* CCMainMenuStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC309699175A6F7F0019129F /* CCMainMenuStore.m */; };
@@ -93,7 +100,6 @@
 		BCC4FF3D1763CC1B001573D7 /* CCFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */; };
 		BCC4FF401763D4DC001573D7 /* CCFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3F1763D4DC001573D7 /* CCFeed.m */; };
 		BCC4FF451764D583001573D7 /* bible.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3096A7175AE5390019129F /* bible.plist */; };
-		BCC4FF4717650580001573D7 /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC4FF4617650580001573D7 /* ccmc_banner2.png */; };
 		BCC4FF4A17650903001573D7 /* CCMediaPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */; };
 		BCC4FF4C17652608001573D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC4FF4B17652607001573D7 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -102,6 +108,11 @@
 		124B050C7BD24ABA99A73187 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF9844296524232AF8C9829 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BC05995017779AF000366683 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BC075F83177CE52D00B23B18 /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
+		BC075F85177D242D00B23B18 /* calavaryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calavaryIcon.png; sourceTree = "<group>"; };
+		BC075F87177D243200B23B18 /* calvaryiconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calvaryiconretina.png; sourceTree = "<group>"; };
+		BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CCMC-logo-RGB color transparent.png"; path = "../../Desktop/CCMC-logo-RGB color transparent.png"; sourceTree = "<group>"; };
+		BC075F8B177D2CF100B23B18 /* ccbanner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbanner4.png; sourceTree = "<group>"; };
 		BC3096951752CE240019129F /* CCStudiesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudiesStore.h; sourceTree = "<group>"; };
 		BC3096961752CE240019129F /* CCStudiesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudiesStore.m; sourceTree = "<group>"; };
 		BC309698175A6F7F0019129F /* CCMainMenuStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainMenuStore.h; sourceTree = "<group>"; };
@@ -166,6 +177,10 @@
 		BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSecondViewController.m; sourceTree = "<group>"; };
 		BC9CC98D17504B71000EBF05 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = ../../dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp/second.png; sourceTree = "<group>"; };
 		BC9CC98F17504B71000EBF05 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "../../dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp/second@2x.png"; sourceTree = "<group>"; };
+		BCA40A99177BE8BC005CA3A7 /* ccmc_default_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default_icon.png; sourceTree = "<group>"; };
+		BCA40A9B177BE8F0005CA3A7 /* ccmc_default_icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default_icon_retina.png; sourceTree = "<group>"; };
+		BCA40A9D177BEA26005CA3A7 /* CCMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMoreViewController.h; sourceTree = "<group>"; };
+		BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMoreViewController.m; sourceTree = "<group>"; };
 		BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRemoteListViewController.h; sourceTree = "<group>"; };
 		BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRemoteListViewController.m; sourceTree = "<group>"; };
 		BCC4FF3517615E30001573D7 /* SermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonModel.h; sourceTree = "<group>"; };
@@ -176,7 +191,6 @@
 		BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFeedManager.m; sourceTree = "<group>"; };
 		BCC4FF3E1763D4DC001573D7 /* CCFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeed.h; sourceTree = "<group>"; };
 		BCC4FF3F1763D4DC001573D7 /* CCFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFeed.m; sourceTree = "<group>"; };
-		BCC4FF4617650580001573D7 /* ccmc_banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner2.png; sourceTree = "<group>"; };
 		BCC4FF4817650903001573D7 /* CCMediaPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMediaPlayerViewController.h; sourceTree = "<group>"; };
 		BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMediaPlayerViewController.m; sourceTree = "<group>"; };
 		BCC4FF4B17652607001573D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -251,6 +265,8 @@
 				BC4A95441772D1B6004EF63D /* CCNewsViewController.m */,
 				BC4A954A17753509004EF63D /* CCNewsDetailViewController.h */,
 				BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */,
+				BCA40A9D177BEA26005CA3A7 /* CCMoreViewController.h */,
+				BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -258,7 +274,9 @@
 		BC4A954D177655A5004EF63D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */,
 				BC4A956017766E97004EF63D /* speaker-electric.png */,
+				BC075F8B177D2CF100B23B18 /* ccbanner4.png */,
 				BC4A955E17766E7B004EF63D /* bookmark.png */,
 				BC4A955C17766E30004EF63D /* multiple.png */,
 				BC4A955A17766D9B004EF63D /* calendar.png */,
@@ -287,6 +305,10 @@
 		BC9CC95C17504B71000EBF05 = {
 			isa = PBXGroup;
 			children = (
+				BC075F87177D243200B23B18 /* calvaryiconretina.png */,
+				BC075F85177D242D00B23B18 /* calavaryIcon.png */,
+				BCA40A9B177BE8F0005CA3A7 /* ccmc_default_icon_retina.png */,
+				BCA40A99177BE8BC005CA3A7 /* ccmc_default_icon.png */,
 				BC41D82B177B53560057DBF0 /* CoreMedia.framework */,
 				BC05995017779AF000366683 /* Social.framework */,
 				BCC4FF4B17652607001573D7 /* AVFoundation.framework */,
@@ -338,7 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4A954D177655A5004EF63D /* images */,
-				BCC4FF4617650580001573D7 /* ccmc_banner2.png */,
+				BC075F83177CE52D00B23B18 /* ccmc_banner3.png */,
 				BC9CC97017504B71000EBF05 /* CalvaryiPhoneApp-Info.plist */,
 				BC9CC97117504B71000EBF05 /* InfoPlist.strings */,
 				BC9CC97417504B71000EBF05 /* main.m */,
@@ -457,7 +479,6 @@
 				BC7A665F1772AD65003642E1 /* second.png in Resources */,
 				BC7A66601772AD65003642E1 /* second@2x.png in Resources */,
 				BC7A66611772AD65003642E1 /* current_response.json in Resources */,
-				BC7A66621772AD65003642E1 /* ccmc_banner2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +497,6 @@
 				BC9CC98E17504B71000EBF05 /* second.png in Resources */,
 				BC9CC99017504B71000EBF05 /* second@2x.png in Resources */,
 				BC8F0001175FC0E0007759CB /* current_response.json in Resources */,
-				BCC4FF4717650580001573D7 /* ccmc_banner2.png in Resources */,
 				BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */,
 				BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */,
 				BC4A9554177655A5004EF63D /* versebyverse.png in Resources */,
@@ -486,6 +506,13 @@
 				BC4A955D17766E30004EF63D /* multiple.png in Resources */,
 				BC4A955F17766E7B004EF63D /* bookmark.png in Resources */,
 				BC4A956117766E97004EF63D /* speaker-electric.png in Resources */,
+				BC075F81177BF62800B23B18 /* ccmc_default_icon.png in Resources */,
+				BC075F82177BF62F00B23B18 /* ccmc_default_icon_retina.png in Resources */,
+				BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */,
+				BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */,
+				BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */,
+				BC075F8A177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png in Resources */,
+				BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +633,7 @@
 				BC86D850176A43C000348353 /* CCNewsFeedManager.m in Sources */,
 				BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */,
 				BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */,
+				BCA40A9F177BEA26005CA3A7 /* CCMoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,9 +751,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FF9844296524232AF8C9829 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CalvaryiPhoneApp/CalvaryiPhoneApp.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalvaryiPhoneApp/CalvaryiPhoneApp-Prefix.pch";
 				INFOPLIST_FILE = "CalvaryiPhoneApp/CalvaryiPhoneApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -735,9 +765,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FF9844296524232AF8C9829 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CalvaryiPhoneApp/CalvaryiPhoneApp.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CalvaryiPhoneApp/CalvaryiPhoneApp-Prefix.pch";
 				INFOPLIST_FILE = "CalvaryiPhoneApp/CalvaryiPhoneApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
