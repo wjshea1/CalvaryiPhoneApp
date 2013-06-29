@@ -84,10 +84,7 @@
 		BC9CC98217504B71000EBF05 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98017504B71000EBF05 /* MainStoryboard.storyboard */; };
 		BC9CC98517504B71000EBF05 /* CCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98417504B71000EBF05 /* CCFirstViewController.m */; };
 		BC9CC98717504B71000EBF05 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98617504B71000EBF05 /* first.png */; };
-		BC9CC98917504B71000EBF05 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98817504B71000EBF05 /* first@2x.png */; };
 		BC9CC98C17504B71000EBF05 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */; };
-		BC9CC98E17504B71000EBF05 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98D17504B71000EBF05 /* second.png */; };
-		BC9CC99017504B71000EBF05 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98F17504B71000EBF05 /* second@2x.png */; };
 		BCA40A9F177BEA26005CA3A7 /* CCMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */; };
 		BCA9C9D3175BF99E001E1D3C /* CCRemoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */; };
 		BCA9C9D5175BFBB7001E1D3C /* CCStudiesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096961752CE240019129F /* CCStudiesStore.m */; };
@@ -493,9 +490,6 @@
 				BC9CC98217504B71000EBF05 /* MainStoryboard.storyboard in Resources */,
 				BC9CC98717504B71000EBF05 /* first.png in Resources */,
 				BCC4FF451764D583001573D7 /* bible.plist in Resources */,
-				BC9CC98917504B71000EBF05 /* first@2x.png in Resources */,
-				BC9CC98E17504B71000EBF05 /* second.png in Resources */,
-				BC9CC99017504B71000EBF05 /* second@2x.png in Resources */,
 				BC8F0001175FC0E0007759CB /* current_response.json in Resources */,
 				BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */,
 				BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */,
