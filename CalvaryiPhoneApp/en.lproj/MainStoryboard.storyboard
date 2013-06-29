@@ -45,20 +45,18 @@
                                     <outlet property="delegate" destination="2" id="BBU-gm-Z6W"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ccmc_banner3.png" translatesAutoresizingMaskIntoConstraints="NO" id="rI4-G6-bLI">
-                                <color key="backgroundColor" white="0.91377737226277367" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ccbanner4.png" translatesAutoresizingMaskIntoConstraints="NO" id="cJa-SP-eVe">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="116" id="KF6-fV-jbc"/>
-                                    <constraint firstAttribute="width" constant="324" id="gvI-ku-3wO"/>
+                                    <constraint firstAttribute="height" constant="124" id="mKm-7A-11c"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PMW-rr-aQq" firstAttribute="top" secondItem="16" secondAttribute="top" constant="115" id="HYZ-lV-81i"/>
-                            <constraint firstItem="rI4-G6-bLI" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="QsY-4i-Nkp"/>
                             <constraint firstItem="PMW-rr-aQq" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="Yxc-S0-CE8"/>
-                            <constraint firstItem="rI4-G6-bLI" firstAttribute="centerX" secondItem="16" secondAttribute="centerX" type="default" id="t5B-yd-Quw"/>
+                            <constraint firstItem="cJa-SP-eVe" firstAttribute="top" secondItem="16" secondAttribute="top" constant="-8" id="ZQO-xR-eXX"/>
+                            <constraint firstItem="cJa-SP-eVe" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="e53-Gj-kRC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Studies" id="FDR-XC-o2E"/>
@@ -113,10 +111,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAx-Ll-TTU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="CCMC-logo-RGB color transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="rAx-Ll-TTU">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="141" id="AiG-WM-17K"/>
-                                    <constraint firstAttribute="width" constant="240" id="dtn-MU-K7O"/>
+                                    <constraint firstAttribute="height" constant="161" id="wZ4-gq-Qx1"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3v-r3-2Di">
@@ -174,13 +171,14 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="SO4-7P-OBP"/>
+                                    <constraint firstAttribute="width" constant="240" id="SPt-uJ-t0H"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Va3-59-gcB">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Va3-59-gcB">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="237" id="rj7-Fn-nuL"/>
                                 </constraints>
@@ -197,18 +195,18 @@
                             <constraint firstItem="Va3-59-gcB" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" constant="178" id="2a8-3g-mvM"/>
                             <constraint firstItem="Va3-59-gcB" firstAttribute="leading" secondItem="mdQ-Lf-Ot2" secondAttribute="leading" type="default" id="49w-pm-tPN"/>
                             <constraint firstItem="Umq-r7-jBp" firstAttribute="centerX" secondItem="Bzk-38-yIB" secondAttribute="centerX" type="default" id="606-q6-1X1"/>
-                            <constraint firstItem="Va3-59-gcB" firstAttribute="trailing" secondItem="rAx-Ll-TTU" secondAttribute="trailing" type="default" id="9pZ-KV-Jon"/>
                             <constraint firstAttribute="bottom" secondItem="f3v-r3-2Di" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Cgv-cz-Lbe"/>
                             <constraint firstItem="f3v-r3-2Di" firstAttribute="leading" secondItem="6B8-Zo-heR" secondAttribute="leading" constant="43" id="Jws-OV-1pu"/>
                             <constraint firstItem="Va3-59-gcB" firstAttribute="trailing" secondItem="Umq-r7-jBp" secondAttribute="trailing" type="default" id="Ovn-2v-Sjj"/>
-                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="leading" secondItem="Umq-r7-jBp" secondAttribute="leading" type="default" id="Udd-9E-akD"/>
+                            <constraint firstItem="mdQ-Lf-Ot2" firstAttribute="centerX" secondItem="rAx-Ll-TTU" secondAttribute="centerX" type="default" id="Pho-YD-AnY"/>
+                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="leading" secondItem="6B8-Zo-heR" secondAttribute="leading" type="default" id="WmE-iv-maY"/>
                             <constraint firstItem="mdQ-Lf-Ot2" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" constant="214" id="X0V-rl-odZ"/>
+                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="trailing" secondItem="6B8-Zo-heR" secondAttribute="trailing" type="default" id="e3o-aX-GQu"/>
                             <constraint firstAttribute="bottom" secondItem="Umq-r7-jBp" secondAttribute="bottom" constant="93" id="eXp-n4-rmV"/>
-                            <constraint firstItem="mdQ-Lf-Ot2" firstAttribute="centerX" secondItem="6B8-Zo-heR" secondAttribute="centerX" type="default" id="h25-iC-3Dv"/>
-                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="iEn-Fs-WOA"/>
                             <constraint firstAttribute="bottom" secondItem="Bzk-38-yIB" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="mKl-1I-0Q8"/>
                             <constraint firstAttribute="trailing" secondItem="PgB-Gr-l0A" secondAttribute="trailing" constant="48" id="v8X-Pc-Fl7"/>
                             <constraint firstAttribute="bottom" secondItem="PgB-Gr-l0A" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xMI-hW-H6P"/>
+                            <constraint firstItem="rAx-Ll-TTU" firstAttribute="top" secondItem="6B8-Zo-heR" secondAttribute="top" type="default" id="yC1-w2-pqA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Audio Player" id="xxe-Wq-5OC"/>
@@ -257,9 +255,6 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="Wh6-yi-1QQ" kind="push" identifier="AUDIOPLAYER_SEQUE_ID" id="UCd-oY-lIo"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -268,6 +263,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Results" id="c04-57-zrJ"/>
+                    <connections>
+                        <segue destination="Wh6-yi-1QQ" kind="push" identifier="REMOTE_LIST_VIEW_SEGUE_FROM_BOOKS" id="zBc-l5-Iww"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Mj-yP-Pkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,7 +329,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="UAx-b8-gSF">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MORE_REUSE_IDENTIFIER" id="UAx-b8-gSF">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -346,7 +344,13 @@
                             <outlet property="delegate" destination="eAM-TX-MAg" id="t50-AI-iFF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="More" id="r9y-fA-M3c"/>
+                    <navigationItem key="navigationItem" title="More" id="r9y-fA-M3c">
+                        <barButtonItem key="rightBarButtonItem" title="Feedback" id="qdU-Gj-e5C">
+                            <connections>
+                                <action selector="feedbackAction:" destination="eAM-TX-MAg" id="HhG-Ib-hxN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7X-AB-9tY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -448,32 +452,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5Z9-Pe-KeI">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="rc6-bX-KJi" detailTextLabel="zMD-qJ-sOo" imageView="fn5-o8-k6R" style="IBUITableViewCellStyleSubtitle" id="mdg-gG-da2">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EVENT_REUSE_IDENTIFIER" id="jCj-yr-c8V">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc6-bX-KJi">
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMD-qJ-sOo">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="speaker-electric.png" id="fn5-o8-k6R">
-                                                    <rect key="frame" x="6" y="6" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="HDX-gQ-cgH" kind="push" id="nS8-5M-WIv"/>
+                                            <segue destination="HDX-gQ-cgH" kind="push" id="KFt-K0-hv5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -624,9 +612,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CCMC-logo-RGB color transparent.png" width="1325" height="604"/>
         <image name="bookmark.png" width="30" height="30"/>
         <image name="calendar.png" width="29" height="30"/>
-        <image name="ccmc_banner3.png" width="320" height="128"/>
+        <image name="ccbanner4.png" width="320" height="128"/>
         <image name="ccmc_default.png" width="80" height="80"/>
         <image name="multiple.png" width="30" height="30"/>
         <image name="second@2x.png" width="60" height="60"/>
