@@ -67,6 +67,10 @@
 		BC9CC97F17504B71000EBF05 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC97E17504B71000EBF05 /* Default-568h@2x.png */; };
 		BC9CC98217504B71000EBF05 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98017504B71000EBF05 /* MainStoryboard.storyboard */; };
 		BC9CC98517504B71000EBF05 /* CCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98417504B71000EBF05 /* CCFirstViewController.m */; };
+<<<<<<< HEAD
+=======
+		BC9CC98717504B71000EBF05 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98617504B71000EBF05 /* first.png */; };
+>>>>>>> 458a25a110784417dbb4af8ef81264af70773775
 		BC9CC98C17504B71000EBF05 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */; };
 		BCA40A9F177BEA26005CA3A7 /* CCMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */; };
 		BCA9C9D3175BF99E001E1D3C /* CCRemoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */; };
