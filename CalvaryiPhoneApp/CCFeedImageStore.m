@@ -32,8 +32,7 @@
 }
 -count
 {
-    
-    
+    return 0;
 }
 -(UIImage *)getImageForURL:(NSString *)url
 {
@@ -49,6 +48,7 @@
 
 -(UIImage *)getImageForURL:(NSString *)url withCompletion: completion
 {
+    return nil;
     
 }
 

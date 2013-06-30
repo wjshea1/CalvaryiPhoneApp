@@ -14,7 +14,6 @@
 		BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F83177CE52D00B23B18 /* ccmc_banner3.png */; };
 		BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F85177D242D00B23B18 /* calavaryIcon.png */; };
 		BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F87177D243200B23B18 /* calvaryiconretina.png */; };
-		BC075F8A177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */; };
 		BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F8B177D2CF100B23B18 /* ccbanner4.png */; };
 		BC372E7B1768DCC100ACC6B2 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7A1768DCC100ACC6B2 /* NewsModel.m */; };
 		BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */; };
@@ -23,8 +22,6 @@
 		BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */; };
 		BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A954E177655A5004EF63D /* ccmc_banner2.png */; };
 		BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A954F177655A5004EF63D /* ccmc_banner3.png */; };
-		BC4A9554177655A5004EF63D /* versebyverse.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A9550177655A5004EF63D /* versebyverse.png */; };
-		BC4A9555177655A5004EF63D /* versebyversex2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A9551177655A5004EF63D /* versebyversex2.png */; };
 		BC4A955717766BA7004EF63D /* ccmc_default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955617766BA7004EF63D /* ccmc_default.png */; };
 		BC4A955B17766D9B004EF63D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955A17766D9B004EF63D /* calendar.png */; };
 		BC4A955D17766E30004EF63D /* multiple.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955C17766E30004EF63D /* multiple.png */; };
@@ -95,6 +92,24 @@
 		BCA9C9D7175BFBC6001E1D3C /* CCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC30969C175A72250019129F /* CCMenuItem.m */; };
 		BCA9C9D8175BFBCC001E1D3C /* CCStudies.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A1175ACD0B0019129F /* CCStudies.m */; };
 		BCA9C9D9175BFBD9001E1D3C /* CCBibleBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */; };
+		BCB688FE177FB800002E5703 /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688EF177FB800002E5703 /* bookmark.png */; };
+		BCB688FF177FB800002E5703 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F0177FB800002E5703 /* calendar.png */; };
+		BCB68900177FB800002E5703 /* ccbanner4.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F1177FB800002E5703 /* ccbanner4.png */; };
+		BCB68901177FB800002E5703 /* CCMC-logo-RGB color transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F2177FB800002E5703 /* CCMC-logo-RGB color transparent.png */; };
+		BCB68902177FB800002E5703 /* ccmc_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F3177FB800002E5703 /* ccmc_banner.png */; };
+		BCB68903177FB800002E5703 /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F4177FB800002E5703 /* ccmc_banner2.png */; };
+		BCB68904177FB800002E5703 /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F5177FB800002E5703 /* ccmc_banner3.png */; };
+		BCB68905177FB800002E5703 /* ccmc_default.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F6177FB800002E5703 /* ccmc_default.png */; };
+		BCB68906177FB800002E5703 /* ccmc_default_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F7177FB800002E5703 /* ccmc_default_icon.png */; };
+		BCB68907177FB800002E5703 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F8177FB800002E5703 /* Default-568h@2x.png */; };
+		BCB68908177FB800002E5703 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F9177FB800002E5703 /* Default.png */; };
+		BCB68909177FB800002E5703 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688FA177FB800002E5703 /* Default@2x.png */; };
+		BCB6890A177FB800002E5703 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688FB177FB800002E5703 /* first.png */; };
+		BCB6890B177FB800002E5703 /* multiple.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688FC177FB800002E5703 /* multiple.png */; };
+		BCB6890C177FB800002E5703 /* speaker-electric.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688FD177FB800002E5703 /* speaker-electric.png */; };
+		BCB6890F177FB844002E5703 /* menuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB6890E177FB844002E5703 /* menuItemModel.m */; };
+		BCB68912177FB9A6002E5703 /* MenuItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB68911177FB9A6002E5703 /* MenuItemsModel.m */; };
+		BCB68917177FBACF002E5703 /* CCMenuItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB68916177FBACF002E5703 /* CCMenuItemManager.m */; };
 		BCC4FF3717615E30001573D7 /* SermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3617615E30001573D7 /* SermonModel.m */; };
 		BCC4FF3A1762D37C001573D7 /* CCFeedImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */; };
 		BCC4FF3D1763CC1B001573D7 /* CCFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */; };
@@ -111,7 +126,6 @@
 		BC075F83177CE52D00B23B18 /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
 		BC075F85177D242D00B23B18 /* calavaryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calavaryIcon.png; sourceTree = "<group>"; };
 		BC075F87177D243200B23B18 /* calvaryiconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calvaryiconretina.png; sourceTree = "<group>"; };
-		BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CCMC-logo-RGB color transparent.png"; path = "../../Desktop/CCMC-logo-RGB color transparent.png"; sourceTree = "<group>"; };
 		BC075F8B177D2CF100B23B18 /* ccbanner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbanner4.png; sourceTree = "<group>"; };
 		BC3096951752CE240019129F /* CCStudiesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudiesStore.h; sourceTree = "<group>"; };
 		BC3096961752CE240019129F /* CCStudiesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudiesStore.m; sourceTree = "<group>"; };
@@ -136,8 +150,6 @@
 		BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsDetailViewController.m; sourceTree = "<group>"; };
 		BC4A954E177655A5004EF63D /* ccmc_banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner2.png; sourceTree = "<group>"; };
 		BC4A954F177655A5004EF63D /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
-		BC4A9550177655A5004EF63D /* versebyverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versebyverse.png; sourceTree = "<group>"; };
-		BC4A9551177655A5004EF63D /* versebyversex2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versebyversex2.png; sourceTree = "<group>"; };
 		BC4A955617766BA7004EF63D /* ccmc_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default.png; sourceTree = "<group>"; };
 		BC4A955817766C7F004EF63D /* ccmc_default.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccmc_default.pxm; sourceTree = "<group>"; };
 		BC4A955A17766D9B004EF63D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/calendar.png"; sourceTree = "<group>"; };
@@ -183,6 +195,27 @@
 		BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMoreViewController.m; sourceTree = "<group>"; };
 		BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRemoteListViewController.h; sourceTree = "<group>"; };
 		BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRemoteListViewController.m; sourceTree = "<group>"; };
+		BCB688EF177FB800002E5703 /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
+		BCB688F0177FB800002E5703 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		BCB688F1177FB800002E5703 /* ccbanner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbanner4.png; sourceTree = "<group>"; };
+		BCB688F2177FB800002E5703 /* CCMC-logo-RGB color transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCMC-logo-RGB color transparent.png"; sourceTree = "<group>"; };
+		BCB688F3177FB800002E5703 /* ccmc_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner.png; sourceTree = "<group>"; };
+		BCB688F4177FB800002E5703 /* ccmc_banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner2.png; sourceTree = "<group>"; };
+		BCB688F5177FB800002E5703 /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
+		BCB688F6177FB800002E5703 /* ccmc_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default.png; sourceTree = "<group>"; };
+		BCB688F7177FB800002E5703 /* ccmc_default_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default_icon.png; sourceTree = "<group>"; };
+		BCB688F8177FB800002E5703 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BCB688F9177FB800002E5703 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BCB688FA177FB800002E5703 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BCB688FB177FB800002E5703 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		BCB688FC177FB800002E5703 /* multiple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiple.png; sourceTree = "<group>"; };
+		BCB688FD177FB800002E5703 /* speaker-electric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speaker-electric.png"; sourceTree = "<group>"; };
+		BCB6890D177FB844002E5703 /* menuItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuItemModel.h; sourceTree = "<group>"; };
+		BCB6890E177FB844002E5703 /* menuItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = menuItemModel.m; sourceTree = "<group>"; };
+		BCB68910177FB9A5002E5703 /* MenuItemsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemsModel.h; sourceTree = "<group>"; };
+		BCB68911177FB9A6002E5703 /* MenuItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemsModel.m; sourceTree = "<group>"; };
+		BCB68915177FBACF002E5703 /* CCMenuItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuItemManager.h; sourceTree = "<group>"; };
+		BCB68916177FBACF002E5703 /* CCMenuItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuItemManager.m; sourceTree = "<group>"; };
 		BCC4FF3517615E30001573D7 /* SermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonModel.h; sourceTree = "<group>"; };
 		BCC4FF3617615E30001573D7 /* SermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonModel.m; sourceTree = "<group>"; };
 		BCC4FF381762D37C001573D7 /* CCFeedImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeedImageStore.h; sourceTree = "<group>"; };
@@ -274,7 +307,7 @@
 		BC4A954D177655A5004EF63D /* images */ = {
 			isa = PBXGroup;
 			children = (
-				BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */,
+				BCB688EE177FB800002E5703 /* png */,
 				BC4A956017766E97004EF63D /* speaker-electric.png */,
 				BC075F8B177D2CF100B23B18 /* ccbanner4.png */,
 				BC4A955E17766E7B004EF63D /* bookmark.png */,
@@ -287,8 +320,6 @@
 				BC9CC98F17504B71000EBF05 /* second@2x.png */,
 				BC4A954E177655A5004EF63D /* ccmc_banner2.png */,
 				BC4A954F177655A5004EF63D /* ccmc_banner3.png */,
-				BC4A9550177655A5004EF63D /* versebyverse.png */,
-				BC4A9551177655A5004EF63D /* versebyversex2.png */,
 			);
 			name = images;
 			path = ../../../../Documents/images;
@@ -373,23 +404,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BCB688EE177FB800002E5703 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				BCB688EF177FB800002E5703 /* bookmark.png */,
+				BCB688F0177FB800002E5703 /* calendar.png */,
+				BCB688F1177FB800002E5703 /* ccbanner4.png */,
+				BCB688F2177FB800002E5703 /* CCMC-logo-RGB color transparent.png */,
+				BCB688F3177FB800002E5703 /* ccmc_banner.png */,
+				BCB688F4177FB800002E5703 /* ccmc_banner2.png */,
+				BCB688F5177FB800002E5703 /* ccmc_banner3.png */,
+				BCB688F6177FB800002E5703 /* ccmc_default.png */,
+				BCB688F7177FB800002E5703 /* ccmc_default_icon.png */,
+				BCB688F8177FB800002E5703 /* Default-568h@2x.png */,
+				BCB688F9177FB800002E5703 /* Default.png */,
+				BCB688FA177FB800002E5703 /* Default@2x.png */,
+				BCB688FB177FB800002E5703 /* first.png */,
+				BCB688FC177FB800002E5703 /* multiple.png */,
+				BCB688FD177FB800002E5703 /* speaker-electric.png */,
+			);
+			name = png;
+			path = CalvaryiPhoneApp/png;
+			sourceTree = SOURCE_ROOT;
+		};
+		BCB68913177FBA86002E5703 /* Sermons */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4FF3E1763D4DC001573D7 /* CCFeed.h */,
+				BCC4FF3F1763D4DC001573D7 /* CCFeed.m */,
+				BCC4FF3B1763CC1B001573D7 /* CCFeedManager.h */,
+				BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */,
+				BCC4FF3517615E30001573D7 /* SermonModel.h */,
+				BCC4FF3617615E30001573D7 /* SermonModel.m */,
+			);
+			name = Sermons;
+			sourceTree = "<group>";
+		};
+		BCB68914177FBAAE002E5703 /* MenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6890D177FB844002E5703 /* menuItemModel.h */,
+				BCB6890E177FB844002E5703 /* menuItemModel.m */,
+				BCB68910177FB9A5002E5703 /* MenuItemsModel.h */,
+				BCB68911177FB9A6002E5703 /* MenuItemsModel.m */,
+				BCB68915177FBACF002E5703 /* CCMenuItemManager.h */,
+				BCB68916177FBACF002E5703 /* CCMenuItemManager.m */,
+			);
+			name = MenuItem;
+			sourceTree = "<group>";
+		};
 		BCC4FF411763EBD8001573D7 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
-				BCC4FF3517615E30001573D7 /* SermonModel.h */,
-				BCC4FF3617615E30001573D7 /* SermonModel.m */,
+				BCB68913177FBA86002E5703 /* Sermons */,
 				BCC4FF381762D37C001573D7 /* CCFeedImageStore.h */,
 				BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */,
-				BCC4FF3B1763CC1B001573D7 /* CCFeedManager.h */,
-				BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */,
-				BCC4FF3E1763D4DC001573D7 /* CCFeed.h */,
-				BCC4FF3F1763D4DC001573D7 /* CCFeed.m */,
 				BC372E791768DCC100ACC6B2 /* NewsModel.h */,
 				BC372E7A1768DCC100ACC6B2 /* NewsModel.m */,
 				BC372E7C1768DE1E00ACC6B2 /* CCNewsFeed.h */,
 				BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */,
 				BC86D84E176A43BF00348353 /* CCNewsFeedManager.h */,
 				BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */,
+				BCB68914177FBAAE002E5703 /* MenuItem */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -499,8 +575,6 @@
 				BC8F0001175FC0E0007759CB /* current_response.json in Resources */,
 				BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */,
 				BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */,
-				BC4A9554177655A5004EF63D /* versebyverse.png in Resources */,
-				BC4A9555177655A5004EF63D /* versebyversex2.png in Resources */,
 				BC4A955717766BA7004EF63D /* ccmc_default.png in Resources */,
 				BC4A955B17766D9B004EF63D /* calendar.png in Resources */,
 				BC4A955D17766E30004EF63D /* multiple.png in Resources */,
@@ -511,8 +585,22 @@
 				BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */,
 				BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */,
 				BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */,
-				BC075F8A177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png in Resources */,
 				BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */,
+				BCB688FE177FB800002E5703 /* bookmark.png in Resources */,
+				BCB688FF177FB800002E5703 /* calendar.png in Resources */,
+				BCB68900177FB800002E5703 /* ccbanner4.png in Resources */,
+				BCB68901177FB800002E5703 /* CCMC-logo-RGB color transparent.png in Resources */,
+				BCB68902177FB800002E5703 /* ccmc_banner.png in Resources */,
+				BCB68903177FB800002E5703 /* ccmc_banner2.png in Resources */,
+				BCB68904177FB800002E5703 /* ccmc_banner3.png in Resources */,
+				BCB68905177FB800002E5703 /* ccmc_default.png in Resources */,
+				BCB68906177FB800002E5703 /* ccmc_default_icon.png in Resources */,
+				BCB68907177FB800002E5703 /* Default-568h@2x.png in Resources */,
+				BCB68908177FB800002E5703 /* Default.png in Resources */,
+				BCB68909177FB800002E5703 /* Default@2x.png in Resources */,
+				BCB6890A177FB800002E5703 /* first.png in Resources */,
+				BCB6890B177FB800002E5703 /* multiple.png in Resources */,
+				BCB6890C177FB800002E5703 /* speaker-electric.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +722,9 @@
 				BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */,
 				BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */,
 				BCA40A9F177BEA26005CA3A7 /* CCMoreViewController.m in Sources */,
+				BCB6890F177FB844002E5703 /* menuItemModel.m in Sources */,
+				BCB68912177FB9A6002E5703 /* MenuItemsModel.m in Sources */,
+				BCB68917177FBACF002E5703 /* CCMenuItemManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

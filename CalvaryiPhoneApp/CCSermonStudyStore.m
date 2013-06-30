@@ -30,7 +30,7 @@
     self = [super init];
     if (self) {
         [MBProgressHUD showHUDAddedTo:parentView animated:YES];
-        _list = [[CCRecentFeed alloc] initFromURLWithString:@"http://localhost:8080/Calvary/feeds/current"
+        _list = [[CCRecentFeed alloc] initFromURLWithString:@"http://calvary.cfapps.io/Calvary/feeds/current"
                                                  completion:^(JSONModel *model, JSONModelError *err){
                                                      NSLog(@"feeds, %@", _list.sermons);
                                                      [MBProgressHUD hideHUDForView:parentView animated:YES];
