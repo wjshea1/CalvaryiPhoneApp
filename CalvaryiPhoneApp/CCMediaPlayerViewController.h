@@ -16,6 +16,7 @@
     float mRestoreAfterScrubbingRate;
 	BOOL seekToZeroBeforePlay;
 	id mTimeObserver;
+    AVPlayerItem *playerItem;
 
     
 }

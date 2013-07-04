@@ -11,7 +11,6 @@
 		BC05995117779AF000366683 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC05995017779AF000366683 /* Social.framework */; };
 		BC075F81177BF62800B23B18 /* ccmc_default_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA40A99177BE8BC005CA3A7 /* ccmc_default_icon.png */; };
 		BC075F82177BF62F00B23B18 /* ccmc_default_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA40A9B177BE8F0005CA3A7 /* ccmc_default_icon_retina.png */; };
-		BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F83177CE52D00B23B18 /* ccmc_banner3.png */; };
 		BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F85177D242D00B23B18 /* calavaryIcon.png */; };
 		BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F87177D243200B23B18 /* calvaryiconretina.png */; };
 		BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F8B177D2CF100B23B18 /* ccbanner4.png */; };
@@ -67,6 +66,7 @@
 		BC7A665F1772AD65003642E1 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98D17504B71000EBF05 /* second.png */; };
 		BC7A66601772AD65003642E1 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98F17504B71000EBF05 /* second@2x.png */; };
 		BC7A66611772AD65003642E1 /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
+		BC82B9FE1781F26600826361 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BC82B9FD1781F26600826361 /* play_button.png */; };
 		BC86D850176A43C000348353 /* CCNewsFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */; };
 		BC8F0001175FC0E0007759CB /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
 		BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96817504B71000EBF05 /* UIKit.framework */; };
@@ -164,6 +164,7 @@
 		BC756576176018D300CE64BF /* CCRecentFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecentFeed.m; sourceTree = "<group>"; };
 		BC7A66671772AD65003642E1 /* CalvaryiPhoneApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalvaryiPhoneApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7A66681772AD65003642E1 /* CalvaryiPhoneApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CalvaryiPhoneApp copy-Info.plist"; path = "/Users/wjshea/dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		BC82B9FD1781F26600826361 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
 		BC86D84E176A43BF00348353 /* CCNewsFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsFeedManager.h; sourceTree = "<group>"; };
 		BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsFeedManager.m; sourceTree = "<group>"; };
 		BC8F0000175FC0E0007759CB /* current_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_response.json; sourceTree = "<group>"; };
@@ -325,6 +326,13 @@
 			path = ../../../../Documents/images;
 			sourceTree = "<group>";
 		};
+		BC82B9FC1781EDDC00826361 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		BC8FFFFF175FC0C2007759CB /* Test Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +382,7 @@
 		BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC82B9FC1781EDDC00826361 /* Utilities */,
 				BC41D82D177B9C8D0057DBF0 /* CalvaryiPhoneApp.entitlements */,
 				BC8FFFFF175FC0C2007759CB /* Test Data */,
 				BC3096A3175AE04F0019129F /* Controllers */,
@@ -407,6 +416,7 @@
 		BCB688EE177FB800002E5703 /* png */ = {
 			isa = PBXGroup;
 			children = (
+				BC82B9FD1781F26600826361 /* play_button.png */,
 				BCB688EF177FB800002E5703 /* bookmark.png */,
 				BCB688F0177FB800002E5703 /* calendar.png */,
 				BCB688F1177FB800002E5703 /* ccbanner4.png */,
@@ -582,7 +592,6 @@
 				BC4A956117766E97004EF63D /* speaker-electric.png in Resources */,
 				BC075F81177BF62800B23B18 /* ccmc_default_icon.png in Resources */,
 				BC075F82177BF62F00B23B18 /* ccmc_default_icon_retina.png in Resources */,
-				BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */,
 				BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */,
 				BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */,
 				BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */,
@@ -601,6 +610,7 @@
 				BCB6890A177FB800002E5703 /* first.png in Resources */,
 				BCB6890B177FB800002E5703 /* multiple.png in Resources */,
 				BCB6890C177FB800002E5703 /* speaker-electric.png in Resources */,
+				BC82B9FE1781F26600826361 /* play_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

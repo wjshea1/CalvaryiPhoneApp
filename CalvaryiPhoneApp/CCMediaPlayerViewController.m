@@ -20,6 +20,8 @@ NSString * const kRateKey			= @"rate";
 NSString * const kCurrentItemKey	= @"currentItem";
 
 
+
+
 @interface CCMediaPlayerViewController ()
 - (CMTime)playerItemDuration;
 - (void)removePlayerTimeObserver;
@@ -54,19 +56,68 @@ NSString * const kCurrentItemKey	= @"currentItem";
     [[self imageViewAlbumArt] setImage:image];
     
     NSLog(@"play file %@", _item.audioFileLocation);
-    NSURL *url = [[NSURL alloc] initWithString:_item.audioFileLocation];
     
-    _streamingPlayer = [[AVPlayer alloc] initWithURL:url];
+    _streamingPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
+    
+    //_playerItem = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation] ];
+   
+                      
+    //_streamingPlayer = [AVPlayer playerWithPlayerItem:playerItem];
 
+    [_streamingPlayer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    [_streamingPlayer addObserver:self forKeyPath:@"currentItem.duration"
+                     options:0
+                     context:nil];
     
-    /*
-     Create an asset for inspection of a resource referenced by a given URL.
-     Load the values for the asset keys "tracks", "playable".
-     */
     
+    
+    
+    //_streamingPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
+}
 
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
+                        change:(NSDictionary *)change context:(void *)context {
     
+    if ( object == _streamingPlayer && [keyPath isEqualToString:@"currentItem.duration"]){
+        NSLog(@"duration");
+    }
     
+    if (object == _streamingPlayer && [keyPath isEqualToString:@"status"]) {
+        if (_streamingPlayer.status == AVPlayerStatusReadyToPlay) {
+            //[playingLbl setText:@"Playing Audio"];
+            NSLog(@"fineee");
+            //[playBtn setEnabled:YES];
+        } else if (_streamingPlayer.status == AVPlayerStatusFailed) {
+            // something went wrong. player.error should contain some information
+            NSLog(@"not fineee");
+            NSLog(@"%@",_streamingPlayer.error);
+            
+        }
+        else if (_streamingPlayer.status == AVPlayerItemStatusUnknown) {
+            NSLog(@"AVPlayer Unknown");
+            
+            
+        }
+        
+        
+        if (object == _streamingPlayer.currentItem && [keyPath isEqualToString:@"status"]) {
+            if (_streamingPlayer.currentItem.status == AVPlayerItemStatusFailed) {
+                NSLog(@"------player item failed:%@",_streamingPlayer.currentItem.error);
+            }
+        }
+    }
+}
+
+-(void)setURL:(NSURL*)URL
+{
+}
+
+-(void) initScrubberTimer
+{
+    double interval = .1f;
+    
+   
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -96,6 +147,7 @@ NSString * const kCurrentItemKey	= @"currentItem";
     
     static bool isPlaying = false;
     if ( !isPlaying ){
+        
         [_streamingPlayer play];
         isPlaying = true;
     } else {
@@ -103,9 +155,30 @@ NSString * const kCurrentItemKey	= @"currentItem";
         isPlaying = false;
     }
     
+    [_streamingPlayer play];
     
+    CMTime playerDuration  = [self playerItemDuration];
+    if ( CMTIME_IS_INVALID(playerDuration)){
+        // bad file
+       //return;
+    }
     
-    
+    CGFloat interval = .1f;
+    double duration = CMTimeGetSeconds(playerDuration);
+    if (isfinite(duration)){
+        CGFloat width = CGRectGetWidth([_scrubber bounds]);
+        interval = 0.5f * duration / width;
+    }
+    __weak typeof(self) weakSelf = self;
+
+    mTimeObserver = [_streamingPlayer addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(interval, NSEC_PER_SEC)
+                                                         queue:NULL
+                                                    usingBlock:
+                     ^(CMTime time)
+                     {
+                         [weakSelf syncScrubber];
+                     }];
+
 /*
     _myAudioPlayer = [[AVAudioPlayer alloc] initWithData:_objectData error:&errorAudioPlayer];
     [_myAudioPlayer prepareToPlay];
@@ -117,6 +190,49 @@ NSString * const kCurrentItemKey	= @"currentItem";
  */
 
     
+    
+}
+
+-(void) syncScrubber
+{
+    NSLog(@"Scrub");
+    CMTime playerDuration = [self playerItemDuration];
+    if (CMTIME_IS_INVALID(playerDuration))
+    {
+        _scrubber.minimumValue = 0.0;
+        NSLog(@"Invalid Duration");
+        return;
+    }
+    
+    double duration = CMTimeGetSeconds(playerDuration);
+    if (isfinite(duration) && (duration > 0))
+    {
+        float minValue = [ _scrubber minimumValue];
+        float maxValue = [ _scrubber maximumValue];
+        double time = CMTimeGetSeconds([_streamingPlayer currentTime]);
+        [_scrubber setValue:(maxValue - minValue) * time / duration + minValue];
+    }
+    
+    
+    
+    
+}
+
+- (CMTime)playerItemDuration
+{
+    AVPlayerItem *thePlayerItem = [_streamingPlayer currentItem];
+    if (thePlayerItem.status == AVPlayerItemStatusReadyToPlay)
+    {
+        
+        return(self.streamingPlayer.currentItem.duration);
+    }
+    
+    return(kCMTimeInvalid);
+}
+
+-(void)syncPlayerButtons {
+    
+        
     
 }
 

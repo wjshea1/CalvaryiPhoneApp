@@ -17,7 +17,7 @@
     if (self) {
         _dict = [[NSMutableDictionary alloc] init];
     }
-    return self;
+    return self;    
 }
 
 +(CCMenuItemManager *)sharedManager
