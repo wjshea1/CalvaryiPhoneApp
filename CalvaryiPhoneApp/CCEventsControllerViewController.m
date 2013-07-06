@@ -1,22 +1,22 @@
 //
-//  CCMoreViewController.m
+//  CCEventsControllerViewController.m
 //  CalvaryiPhoneApp
 //
-//  Created by Bill Shea on 6/26/13.
+//  Created by Bill Shea on 7/5/13.
 //  Copyright (c) 2013 Calvary Chapel Mercer County. All rights reserved.
 //
 
-#import "CCMoreViewController.h"
-#import "testflight.h"
-#import "MenuItemsModel.h"
-#import "CCMenuItemManager.h"
+#import "CCEventsControllerViewController.h"
 #import "MBProgressHUD.h"
+#import "CCEventManager.h"
+#import "CCEventsDetailViewController.h"
+#import "CCEventCell.h"
 
-@interface CCMoreViewController ()
+@interface CCEventsControllerViewController ()
 
 @end
 
-@implementation CCMoreViewController
+@implementation CCEventsControllerViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,19 +37,19 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    // Fetch the data
-     myManager = [CCMenuItemManager sharedManager];
+    // Load the xib for the subview
+    UINib *nib = [UINib nibWithNibName:@"newscell" bundle:nil];
+    [[self tableView] registerNib:nib forCellReuseIdentifier:@"EventsItemCellReuseIdentifier"];
     
-    // -(MenuItemsModel *)getMenuItemsWithMenuName: (NSString *) menuName  completion: (void (^)(void) )complete
+    
+    CCEventManager *myManager = [CCEventManager sharedManger];
+    
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    [myManager getMenuItemsWithMenuName:@"more" completion:^{
-                       [MBProgressHUD hideHUDForView:self.view animated:YES];
-                       [self.tableView reloadData];
-                   }];
-    
-
-    
+    [myManager getEventsWithURLString:@"http://calvary.cfapps.io/feeds/events" withCompletion:^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self.tableView reloadData];
+    }];
     
 }
 
@@ -63,34 +63,35 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    MenuItemsModel *items = [myManager getMenuItemsWithMenuName:@"more"];
-    if ( items ) {
-        NSLog(@"number of menu items %d", items.menus.count);
-        return items.menus.count;
-    }
-    return 0;
+    return [[CCEventManager sharedManger] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"CellForRow");
-    static NSString *CellIdentifier = @"MORE_REUSE_IDENTIFIER";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"EventsItemCellReuseIdentifier";
+    CCEventCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
     
     // Configure the cell...
-    MenuItemModel *model = [[myManager getMenuItemsWithMenuName:@"more"].menus objectAtIndex:[indexPath row] ];
+    EventModel *model = [[CCEventManager sharedManger] getObjectAtIndex:[indexPath row]];
+    [cell.titleLabel setText:model.title];
+    [cell.descriptionLabel setText:model.description];
     
-    [[cell textLabel] setText:model.name];
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:@"MMM dd"];
+    NSString *dateString = [format stringFromDate:model.eventDate];
+    
+    [cell.dateLabel setText:dateString];
+    
     return cell;
 }
 
@@ -144,17 +145,24 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    
-     MenuItemsModel *items = [myManager getMenuItemsWithMenuName:@"more"];
-     MenuItemModel *item = [items.menus objectAtIndex:[indexPath row]];
-    if ( item.url ) {
-        [TestFlight passCheckpoint:@"more menu item"];
-        [[UIApplication sharedApplication]openURL:[NSURL URLWithString:item.url]];
-    }
-    
+    [self performSegueWithIdentifier:@"segue_events_detail" sender:self ];
 }
 
-- (IBAction)feedbackAction:(id)sender {
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    
+    CCEventManager *myManager = [CCEventManager sharedManger];
+    int count = [myManager count];
+    if ( count > 0 ){
+        
+        CCEventsDetailViewController *destView = segue.destinationViewController;
+        NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        
+        EventModel *event = [myManager getObjectAtIndex:[indexPath row]];
+        destView.item = event;
+    }
+
     
 }
 @end

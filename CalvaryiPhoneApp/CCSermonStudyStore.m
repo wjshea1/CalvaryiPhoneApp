@@ -71,7 +71,7 @@
 {
     return [[_list sermons] count];
 }
-#warning Remote this is for testing only
+
 -(NSString *)getJSONResponse
 {
     return @"";

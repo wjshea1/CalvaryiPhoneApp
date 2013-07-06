@@ -88,7 +88,7 @@ NSArray *list = nil;
     // Configure the cell...
     NSString *description = [list objectAtIndex:[indexPath row]];
     [[cell textLabel] setText:description];
-    NSLog(description);
+    NSLog(@"%@",description);
     
     return cell;
 }

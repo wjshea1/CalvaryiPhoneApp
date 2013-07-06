@@ -56,25 +56,45 @@ NSString * const kCurrentItemKey	= @"currentItem";
     [[self imageViewAlbumArt] setImage:image];
     
     NSLog(@"play file %@", _item.audioFileLocation);
+    if ( !_streamingPlayer ) {
+        _streamingPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
+    } else {
+        // There is already a streaming running
+        // We want to remove the observers and listeners and start up a new player
+        [_streamingPlayer pause];
+        _streamingPlayer = nil;
+// todo:not finished
+    }
     
-    _streamingPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
-    
-    //_playerItem = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation] ];
-   
-                      
-    //_streamingPlayer = [AVPlayer playerWithPlayerItem:playerItem];
-
-    [_streamingPlayer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
-    [_streamingPlayer addObserver:self forKeyPath:@"currentItem.duration"
-                     options:0
-                     context:nil];
-    
-    
-    
-    
-    //_streamingPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+	// Do any additional setup after loading the view.
+    [_streamingPlayer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    [_streamingPlayer addObserver:self forKeyPath:@"currentItem.duration"
+                          options:0
+                          context:nil];
+    
+    // Call Init scrubber here
+    [self initScrubber];
+    
+    
+    
+}
+-(void) viewDidDisappear:(BOOL)animated
+{
+    
+    // Removing these observers because they are not need as the view can no longer be seen
+    // I will leave the PerodicTimeObserver until dealloc
+    [_streamingPlayer removeObserver:self forKeyPath:@"status"];
+    [_streamingPlayer removeObserver:self forKeyPath:@"currentItem.duration"];
+}
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
                         change:(NSDictionary *)change context:(void *)context {
@@ -109,29 +129,12 @@ NSString * const kCurrentItemKey	= @"currentItem";
     }
 }
 
--(void)setURL:(NSURL*)URL
-{
-}
 
--(void) initScrubberTimer
-{
-    double interval = .1f;
-    
-   
-}
 
--(void)viewDidAppear:(BOOL)animated
-{
-	// Do any additional setup after loading the view.
- 
-    
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
 
 - (IBAction)pressButtonBack:(id)sender {
     if ( _streamingPlayer) {
@@ -145,9 +148,10 @@ NSString * const kCurrentItemKey	= @"currentItem";
 
 - (IBAction)pressButtonPlayPause:(id)sender {
     
-    static bool isPlaying = false;
+    static bool isPlaying = false; // This is a bug wating to happen
+    
+    
     if ( !isPlaying ){
-        
         [_streamingPlayer play];
         isPlaying = true;
     } else {
@@ -155,12 +159,18 @@ NSString * const kCurrentItemKey	= @"currentItem";
         isPlaying = false;
     }
     
-    [_streamingPlayer play];
     
+    
+ }
+
+
+
+-(void)initScrubber
+{
     CMTime playerDuration  = [self playerItemDuration];
     if ( CMTIME_IS_INVALID(playerDuration)){
         // bad file
-       //return;
+        return;
     }
     
     CGFloat interval = .1f;
@@ -170,53 +180,22 @@ NSString * const kCurrentItemKey	= @"currentItem";
         interval = 0.5f * duration / width;
     }
     __weak typeof(self) weakSelf = self;
-
+    
     mTimeObserver = [_streamingPlayer addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(interval, NSEC_PER_SEC)
-                                                         queue:NULL
-                                                    usingBlock:
+                                                                   queue:NULL
+                                                              usingBlock:
                      ^(CMTime time)
                      {
                          [weakSelf syncScrubber];
                      }];
 
-/*
-    _myAudioPlayer = [[AVAudioPlayer alloc] initWithData:_objectData error:&errorAudioPlayer];
-    [_myAudioPlayer prepareToPlay];
-    if (!_myAudioPlayer) {
-        NSLog(@"Error Loading File %@", errorAudioPlayer.description);
-    }
-    [_myAudioPlayer play];
- 
- */
-
-    
     
 }
 
--(void) syncScrubber
-{
-    NSLog(@"Scrub");
-    CMTime playerDuration = [self playerItemDuration];
-    if (CMTIME_IS_INVALID(playerDuration))
-    {
-        _scrubber.minimumValue = 0.0;
-        NSLog(@"Invalid Duration");
-        return;
-    }
-    
-    double duration = CMTimeGetSeconds(playerDuration);
-    if (isfinite(duration) && (duration > 0))
-    {
-        float minValue = [ _scrubber minimumValue];
-        float maxValue = [ _scrubber maximumValue];
-        double time = CMTimeGetSeconds([_streamingPlayer currentTime]);
-        [_scrubber setValue:(maxValue - minValue) * time / duration + minValue];
-    }
-    
-    
-    
-    
-}
+
+
+
+
 
 - (CMTime)playerItemDuration
 {
@@ -255,6 +234,48 @@ NSString * const kCurrentItemKey	= @"currentItem";
 /* The user has released the movie thumb control to stop scrubbing through the movie. */
 - (IBAction)endScrubbing:(id)sender
 {
+}
+
+-(NSString *)getTextforPlayerWithCMTime:(CMTime )durationV
+{
+    if (CMTIME_IS_INVALID(durationV))
+        return @"0:00";
+    NSUInteger dTotalSeconds = CMTimeGetSeconds(durationV);
+    
+    NSUInteger dHours = floor(dTotalSeconds / 3600);
+    NSUInteger dMinutes = floor(dTotalSeconds % 3600 / 60);
+    NSUInteger dSeconds = floor(dTotalSeconds % 3600 % 60);
+    
+    NSString *videoDurationText = [NSString stringWithFormat:@"%i:%02i:%02i",dHours, dMinutes, dSeconds];
+    NSLog(@"%@",videoDurationText);
+    return videoDurationText;
+}
+
+-(void) syncScrubber
+{
+    NSLog(@"Scrub");
+    CMTime playerDuration = [self playerItemDuration];
+    if (CMTIME_IS_INVALID(playerDuration))
+    {
+        _scrubber.minimumValue = 0.0;
+        NSLog(@"Invalid Duration");
+        return;
+    }
+    
+    double duration = CMTimeGetSeconds(playerDuration);
+    if (isfinite(duration) && (duration > 0))
+    {
+        NSLog(@"Duration of audio is %f", duration);
+        float minValue = [ _scrubber minimumValue];
+        float maxValue = [ _scrubber maximumValue];
+        double time = CMTimeGetSeconds([_streamingPlayer currentTime]);
+        [_scrubber setValue:(maxValue - minValue) * time / duration + minValue];
+      
+        [_titleCurrentTime setText:[self getTextforPlayerWithCMTime:_streamingPlayer.currentTime]];
+        [_titleEndTime setText:[self getTextforPlayerWithCMTime:playerDuration]];
+    }
+    
+    
 }
 
 

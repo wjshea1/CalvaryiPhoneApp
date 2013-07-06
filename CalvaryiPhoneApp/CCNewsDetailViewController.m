@@ -57,13 +57,15 @@
 
 
 - (IBAction)clickShareButton:(id)sender {
-    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
-        SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        
-        [controller setInitialText:_item.headline];
-        [controller addURL:[NSURL URLWithString:_item.internetLink]];
-        [self presentViewController:controller animated:YES completion:Nil];
-    }
+
+    NSArray *activityItems;
+    
+    activityItems =@[_item.headline,_item.internetLink];
+    
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    [self presentViewController:activityController animated:YES completion:nil];
+    
+
 }
 - (IBAction)clickLearnMoreAction:(id)sender {
     

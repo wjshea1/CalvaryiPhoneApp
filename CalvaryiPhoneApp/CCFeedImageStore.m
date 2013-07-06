@@ -46,9 +46,9 @@
     return img;
 }
 
--(UIImage *)getImageForURL:(NSString *)url withCompletion: completion
+-(UIImage *)getImageForURL:(NSString *)url withCompletion: (void (^)(void) )complete
 {
-    return nil;
+    // Async way to get images for now do direct load but should change to async
     
 }
 
