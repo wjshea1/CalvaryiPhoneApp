@@ -15,5 +15,5 @@
 +(CCFeedImageStore *) sharedStore;
 -count;
 -(UIImage *)getImageForURL:(NSString *)url;
--(UIImage *)getImageForURL:(NSString *)url withCompletion: completion;
+-(UIImage *)getImageForURL:(NSString *)url withCompletion: (void (^)(void) )complete;
 @end

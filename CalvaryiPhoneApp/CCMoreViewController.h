@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCMenuItemManager.h"
 
 @interface CCMoreViewController : UITableViewController
+{
+    CCMenuItemManager *myManager;
+}
 - (IBAction)feedbackAction:(id)sender;
 
 

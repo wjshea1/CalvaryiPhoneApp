@@ -8,28 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7782986B84FA4A33AC0B121F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B050C7BD24ABA99A73187 /* libPods.a */; };
+		BC00E93D17850E2000E32F53 /* pause_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BC00E93C17850E2000E32F53 /* pause_button.png */; };
+		BC00E93F17850E3300E32F53 /* forward_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BC00E93E17850E3300E32F53 /* forward_button.png */; };
+		BC00E94117850E3C00E32F53 /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BC00E94017850E3C00E32F53 /* back_button.png */; };
 		BC05995117779AF000366683 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC05995017779AF000366683 /* Social.framework */; };
 		BC075F81177BF62800B23B18 /* ccmc_default_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA40A99177BE8BC005CA3A7 /* ccmc_default_icon.png */; };
 		BC075F82177BF62F00B23B18 /* ccmc_default_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA40A9B177BE8F0005CA3A7 /* ccmc_default_icon_retina.png */; };
-		BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F83177CE52D00B23B18 /* ccmc_banner3.png */; };
 		BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F85177D242D00B23B18 /* calavaryIcon.png */; };
 		BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F87177D243200B23B18 /* calvaryiconretina.png */; };
-		BC075F8A177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */; };
-		BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC075F8B177D2CF100B23B18 /* ccbanner4.png */; };
 		BC372E7B1768DCC100ACC6B2 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7A1768DCC100ACC6B2 /* NewsModel.m */; };
 		BC372E7E1768DE1E00ACC6B2 /* CCNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC372E7D1768DE1E00ACC6B2 /* CCNewsFeed.m */; };
 		BC41D82C177B53560057DBF0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D82B177B53560057DBF0 /* CoreMedia.framework */; };
 		BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A95441772D1B6004EF63D /* CCNewsViewController.m */; };
 		BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */; };
-		BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A954E177655A5004EF63D /* ccmc_banner2.png */; };
-		BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A954F177655A5004EF63D /* ccmc_banner3.png */; };
-		BC4A9554177655A5004EF63D /* versebyverse.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A9550177655A5004EF63D /* versebyverse.png */; };
-		BC4A9555177655A5004EF63D /* versebyversex2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A9551177655A5004EF63D /* versebyversex2.png */; };
-		BC4A955717766BA7004EF63D /* ccmc_default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955617766BA7004EF63D /* ccmc_default.png */; };
-		BC4A955B17766D9B004EF63D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955A17766D9B004EF63D /* calendar.png */; };
-		BC4A955D17766E30004EF63D /* multiple.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955C17766E30004EF63D /* multiple.png */; };
-		BC4A955F17766E7B004EF63D /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A955E17766E7B004EF63D /* bookmark.png */; };
-		BC4A956117766E97004EF63D /* speaker-electric.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4A956017766E97004EF63D /* speaker-electric.png */; };
+		BC6DDB3F17864E0300C7A7E7 /* CCStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6DDB3E17864E0300C7A7E7 /* CCStateManager.m */; };
 		BC756571176013E300CE64BF /* CCSermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756570176013E300CE64BF /* CCSermonModel.m */; };
 		BC7565741760154700CE64BF /* CCSermonStudyStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7565731760154700CE64BF /* CCSermonStudyStore.m */; };
 		BC756577176018D300CE64BF /* CCRecentFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC756576176018D300CE64BF /* CCRecentFeed.m */; };
@@ -70,6 +62,7 @@
 		BC7A665F1772AD65003642E1 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98D17504B71000EBF05 /* second.png */; };
 		BC7A66601772AD65003642E1 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9CC98F17504B71000EBF05 /* second@2x.png */; };
 		BC7A66611772AD65003642E1 /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
+		BC82B9FE1781F26600826361 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BC82B9FD1781F26600826361 /* play_button.png */; };
 		BC86D850176A43C000348353 /* CCNewsFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */; };
 		BC8F0001175FC0E0007759CB /* current_response.json in Resources */ = {isa = PBXBuildFile; fileRef = BC8F0000175FC0E0007759CB /* current_response.json */; };
 		BC9CC96917504B71000EBF05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9CC96817504B71000EBF05 /* UIKit.framework */; };
@@ -95,6 +88,18 @@
 		BCA9C9D7175BFBC6001E1D3C /* CCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC30969C175A72250019129F /* CCMenuItem.m */; };
 		BCA9C9D8175BFBCC001E1D3C /* CCStudies.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A1175ACD0B0019129F /* CCStudies.m */; };
 		BCA9C9D9175BFBD9001E1D3C /* CCBibleBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */; };
+		BCB688FE177FB800002E5703 /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688EF177FB800002E5703 /* bookmark.png */; };
+		BCB688FF177FB800002E5703 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F0177FB800002E5703 /* calendar.png */; };
+		BCB68900177FB800002E5703 /* ccbanner4.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F1177FB800002E5703 /* ccbanner4.png */; };
+		BCB68901177FB800002E5703 /* CCMC-logo-RGB color transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F2177FB800002E5703 /* CCMC-logo-RGB color transparent.png */; };
+		BCB68902177FB800002E5703 /* ccmc_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F3177FB800002E5703 /* ccmc_banner.png */; };
+		BCB68903177FB800002E5703 /* ccmc_banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F4177FB800002E5703 /* ccmc_banner2.png */; };
+		BCB68904177FB800002E5703 /* ccmc_banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688F5177FB800002E5703 /* ccmc_banner3.png */; };
+		BCB6890B177FB800002E5703 /* multiple.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688FC177FB800002E5703 /* multiple.png */; };
+		BCB6890C177FB800002E5703 /* speaker-electric.png in Resources */ = {isa = PBXBuildFile; fileRef = BCB688FD177FB800002E5703 /* speaker-electric.png */; };
+		BCB6890F177FB844002E5703 /* menuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB6890E177FB844002E5703 /* menuItemModel.m */; };
+		BCB68912177FB9A6002E5703 /* MenuItemsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB68911177FB9A6002E5703 /* MenuItemsModel.m */; };
+		BCB68917177FBACF002E5703 /* CCMenuItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB68916177FBACF002E5703 /* CCMenuItemManager.m */; };
 		BCC4FF3717615E30001573D7 /* SermonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3617615E30001573D7 /* SermonModel.m */; };
 		BCC4FF3A1762D37C001573D7 /* CCFeedImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */; };
 		BCC4FF3D1763CC1B001573D7 /* CCFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */; };
@@ -102,16 +107,26 @@
 		BCC4FF451764D583001573D7 /* bible.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3096A7175AE5390019129F /* bible.plist */; };
 		BCC4FF4A17650903001573D7 /* CCMediaPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */; };
 		BCC4FF4C17652608001573D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC4FF4B17652607001573D7 /* AVFoundation.framework */; };
+		BCE352311787132B0045BE3C /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE352301787132B0045BE3C /* EventModel.m */; };
+		BCE352341787168A0045BE3C /* EventsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE352331787168A0045BE3C /* EventsModel.m */; };
+		BCE352371787173D0045BE3C /* CCEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE352361787173D0045BE3C /* CCEventManager.m */; };
+		BCE3523A17871AB40045BE3C /* CCEventsControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3523917871AB40045BE3C /* CCEventsControllerViewController.m */; };
+		BCE3523C178739340045BE3C /* newscell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE3523B178739330045BE3C /* newscell.xib */; };
+		BCE3523F17875C930045BE3C /* CCEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3523E17875C930045BE3C /* CCEventCell.m */; };
+		BCE35245178889FB0045BE3C /* CCEventsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE35244178889FB0045BE3C /* CCEventsDetailViewController.m */; };
+		BCE352471788D3A50045BE3C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE352461788D3A40045BE3C /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		124B050C7BD24ABA99A73187 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF9844296524232AF8C9829 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BC00E93C17850E2000E32F53 /* pause_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_button.png; sourceTree = "<group>"; };
+		BC00E93E17850E3300E32F53 /* forward_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward_button.png; sourceTree = "<group>"; };
+		BC00E94017850E3C00E32F53 /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
 		BC05995017779AF000366683 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BC075F83177CE52D00B23B18 /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
 		BC075F85177D242D00B23B18 /* calavaryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calavaryIcon.png; sourceTree = "<group>"; };
 		BC075F87177D243200B23B18 /* calvaryiconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calvaryiconretina.png; sourceTree = "<group>"; };
-		BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CCMC-logo-RGB color transparent.png"; path = "../../Desktop/CCMC-logo-RGB color transparent.png"; sourceTree = "<group>"; };
 		BC075F8B177D2CF100B23B18 /* ccbanner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbanner4.png; sourceTree = "<group>"; };
 		BC3096951752CE240019129F /* CCStudiesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStudiesStore.h; sourceTree = "<group>"; };
 		BC3096961752CE240019129F /* CCStudiesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStudiesStore.m; sourceTree = "<group>"; };
@@ -136,14 +151,14 @@
 		BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsDetailViewController.m; sourceTree = "<group>"; };
 		BC4A954E177655A5004EF63D /* ccmc_banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner2.png; sourceTree = "<group>"; };
 		BC4A954F177655A5004EF63D /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
-		BC4A9550177655A5004EF63D /* versebyverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versebyverse.png; sourceTree = "<group>"; };
-		BC4A9551177655A5004EF63D /* versebyversex2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versebyversex2.png; sourceTree = "<group>"; };
 		BC4A955617766BA7004EF63D /* ccmc_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default.png; sourceTree = "<group>"; };
 		BC4A955817766C7F004EF63D /* ccmc_default.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccmc_default.pxm; sourceTree = "<group>"; };
 		BC4A955A17766D9B004EF63D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/calendar.png"; sourceTree = "<group>"; };
 		BC4A955C17766E30004EF63D /* multiple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiple.png; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/multiple.png"; sourceTree = "<group>"; };
 		BC4A955E17766E7B004EF63D /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/bookmark.png"; sourceTree = "<group>"; };
 		BC4A956017766E97004EF63D /* speaker-electric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker-electric.png"; path = "../../Downloads/iconbeast-lite/iconbeast lite - png/speaker-electric.png"; sourceTree = "<group>"; };
+		BC6DDB3D17864E0300C7A7E7 /* CCStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStateManager.h; sourceTree = "<group>"; };
+		BC6DDB3E17864E0300C7A7E7 /* CCStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStateManager.m; sourceTree = "<group>"; };
 		BC75656F176013E300CE64BF /* CCSermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonModel.h; sourceTree = "<group>"; };
 		BC756570176013E300CE64BF /* CCSermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSermonModel.m; sourceTree = "<group>"; };
 		BC7565721760154700CE64BF /* CCSermonStudyStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSermonStudyStore.h; sourceTree = "<group>"; };
@@ -152,6 +167,7 @@
 		BC756576176018D300CE64BF /* CCRecentFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecentFeed.m; sourceTree = "<group>"; };
 		BC7A66671772AD65003642E1 /* CalvaryiPhoneApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalvaryiPhoneApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7A66681772AD65003642E1 /* CalvaryiPhoneApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CalvaryiPhoneApp copy-Info.plist"; path = "/Users/wjshea/dev/iOS/CalvaryiPhoneApp/CalvaryiPhoneApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		BC82B9FD1781F26600826361 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
 		BC86D84E176A43BF00348353 /* CCNewsFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNewsFeedManager.h; sourceTree = "<group>"; };
 		BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNewsFeedManager.m; sourceTree = "<group>"; };
 		BC8F0000175FC0E0007759CB /* current_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_response.json; sourceTree = "<group>"; };
@@ -183,6 +199,27 @@
 		BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMoreViewController.m; sourceTree = "<group>"; };
 		BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRemoteListViewController.h; sourceTree = "<group>"; };
 		BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRemoteListViewController.m; sourceTree = "<group>"; };
+		BCB688EF177FB800002E5703 /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
+		BCB688F0177FB800002E5703 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		BCB688F1177FB800002E5703 /* ccbanner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbanner4.png; sourceTree = "<group>"; };
+		BCB688F2177FB800002E5703 /* CCMC-logo-RGB color transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCMC-logo-RGB color transparent.png"; sourceTree = "<group>"; };
+		BCB688F3177FB800002E5703 /* ccmc_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner.png; sourceTree = "<group>"; };
+		BCB688F4177FB800002E5703 /* ccmc_banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner2.png; sourceTree = "<group>"; };
+		BCB688F5177FB800002E5703 /* ccmc_banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_banner3.png; sourceTree = "<group>"; };
+		BCB688F6177FB800002E5703 /* ccmc_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default.png; sourceTree = "<group>"; };
+		BCB688F7177FB800002E5703 /* ccmc_default_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccmc_default_icon.png; sourceTree = "<group>"; };
+		BCB688F8177FB800002E5703 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BCB688F9177FB800002E5703 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BCB688FA177FB800002E5703 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BCB688FB177FB800002E5703 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		BCB688FC177FB800002E5703 /* multiple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiple.png; sourceTree = "<group>"; };
+		BCB688FD177FB800002E5703 /* speaker-electric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speaker-electric.png"; sourceTree = "<group>"; };
+		BCB6890D177FB844002E5703 /* menuItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuItemModel.h; sourceTree = "<group>"; };
+		BCB6890E177FB844002E5703 /* menuItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = menuItemModel.m; sourceTree = "<group>"; };
+		BCB68910177FB9A5002E5703 /* MenuItemsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemsModel.h; sourceTree = "<group>"; };
+		BCB68911177FB9A6002E5703 /* MenuItemsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemsModel.m; sourceTree = "<group>"; };
+		BCB68915177FBACF002E5703 /* CCMenuItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuItemManager.h; sourceTree = "<group>"; };
+		BCB68916177FBACF002E5703 /* CCMenuItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuItemManager.m; sourceTree = "<group>"; };
 		BCC4FF3517615E30001573D7 /* SermonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonModel.h; sourceTree = "<group>"; };
 		BCC4FF3617615E30001573D7 /* SermonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonModel.m; sourceTree = "<group>"; };
 		BCC4FF381762D37C001573D7 /* CCFeedImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeedImageStore.h; sourceTree = "<group>"; };
@@ -194,6 +231,20 @@
 		BCC4FF4817650903001573D7 /* CCMediaPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMediaPlayerViewController.h; sourceTree = "<group>"; };
 		BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMediaPlayerViewController.m; sourceTree = "<group>"; };
 		BCC4FF4B17652607001573D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BCE3522F1787132B0045BE3C /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventModel.h; sourceTree = "<group>"; };
+		BCE352301787132B0045BE3C /* EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventModel.m; sourceTree = "<group>"; };
+		BCE352321787168A0045BE3C /* EventsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsModel.h; sourceTree = "<group>"; };
+		BCE352331787168A0045BE3C /* EventsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsModel.m; sourceTree = "<group>"; };
+		BCE352351787173D0045BE3C /* CCEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventManager.h; sourceTree = "<group>"; };
+		BCE352361787173D0045BE3C /* CCEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEventManager.m; sourceTree = "<group>"; };
+		BCE3523817871AB40045BE3C /* CCEventsControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventsControllerViewController.h; sourceTree = "<group>"; };
+		BCE3523917871AB40045BE3C /* CCEventsControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEventsControllerViewController.m; sourceTree = "<group>"; };
+		BCE3523B178739330045BE3C /* newscell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = newscell.xib; path = ../newscell.xib; sourceTree = "<group>"; };
+		BCE3523D17875C930045BE3C /* CCEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventCell.h; sourceTree = "<group>"; };
+		BCE3523E17875C930045BE3C /* CCEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEventCell.m; sourceTree = "<group>"; };
+		BCE35243178889FB0045BE3C /* CCEventsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventsDetailViewController.h; sourceTree = "<group>"; };
+		BCE35244178889FB0045BE3C /* CCEventsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEventsDetailViewController.m; sourceTree = "<group>"; };
+		BCE352461788D3A40045BE3C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE352471788D3A50045BE3C /* EventKit.framework in Frameworks */,
 				BC41D82C177B53560057DBF0 /* CoreMedia.framework in Frameworks */,
 				BC05995117779AF000366683 /* Social.framework in Frameworks */,
 				BCC4FF4C17652608001573D7 /* AVFoundation.framework in Frameworks */,
@@ -229,21 +281,8 @@
 		BC3096941752C4C10019129F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC6DDB3C17864DDF00C7A7E7 /* StateManagement */,
 				BCC4FF411763EBD8001573D7 /* Feeds */,
-				BC3096951752CE240019129F /* CCStudiesStore.h */,
-				BC3096961752CE240019129F /* CCStudiesStore.m */,
-				BC309698175A6F7F0019129F /* CCMainMenuStore.h */,
-				BC309699175A6F7F0019129F /* CCMainMenuStore.m */,
-				BC30969B175A72250019129F /* CCMenuItem.h */,
-				BC30969C175A72250019129F /* CCMenuItem.m */,
-				BC3096A0175ACD0B0019129F /* CCStudies.h */,
-				BC3096A1175ACD0B0019129F /* CCStudies.m */,
-				BC75656F176013E300CE64BF /* CCSermonModel.h */,
-				BC756570176013E300CE64BF /* CCSermonModel.m */,
-				BC7565721760154700CE64BF /* CCSermonStudyStore.h */,
-				BC7565731760154700CE64BF /* CCSermonStudyStore.m */,
-				BC756575176018D200CE64BF /* CCRecentFeed.h */,
-				BC756576176018D300CE64BF /* CCRecentFeed.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -251,22 +290,28 @@
 		BC3096A3175AE04F0019129F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BCE3523D17875C930045BE3C /* CCEventCell.h */,
+				BCE3523E17875C930045BE3C /* CCEventCell.m */,
 				BCA9C9D1175BF99E001E1D3C /* CCRemoteListViewController.h */,
 				BCA9C9D2175BF99E001E1D3C /* CCRemoteListViewController.m */,
 				BC9CC98A17504B71000EBF05 /* CCSecondViewController.h */,
+				BCE3523817871AB40045BE3C /* CCEventsControllerViewController.h */,
+				BCE3523917871AB40045BE3C /* CCEventsControllerViewController.m */,
 				BC9CC98B17504B71000EBF05 /* CCSecondViewController.m */,
 				BC9CC98317504B71000EBF05 /* CCFirstViewController.h */,
 				BC9CC98417504B71000EBF05 /* CCFirstViewController.m */,
 				BC3096A4175AE0A80019129F /* CCBibleBookViewController.h */,
 				BC3096A5175AE0A80019129F /* CCBibleBookViewController.m */,
 				BCC4FF4817650903001573D7 /* CCMediaPlayerViewController.h */,
-				BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */,
 				BC4A95431772D1B6004EF63D /* CCNewsViewController.h */,
 				BC4A95441772D1B6004EF63D /* CCNewsViewController.m */,
 				BC4A954A17753509004EF63D /* CCNewsDetailViewController.h */,
 				BC4A954B17753509004EF63D /* CCNewsDetailViewController.m */,
 				BCA40A9D177BEA26005CA3A7 /* CCMoreViewController.h */,
 				BCA40A9E177BEA26005CA3A7 /* CCMoreViewController.m */,
+				BCE35243178889FB0045BE3C /* CCEventsDetailViewController.h */,
+				BCE35244178889FB0045BE3C /* CCEventsDetailViewController.m */,
+				BCC4FF4917650903001573D7 /* CCMediaPlayerViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -274,7 +319,7 @@
 		BC4A954D177655A5004EF63D /* images */ = {
 			isa = PBXGroup;
 			children = (
-				BC075F89177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png */,
+				BCB688EE177FB800002E5703 /* png */,
 				BC4A956017766E97004EF63D /* speaker-electric.png */,
 				BC075F8B177D2CF100B23B18 /* ccbanner4.png */,
 				BC4A955E17766E7B004EF63D /* bookmark.png */,
@@ -287,11 +332,25 @@
 				BC9CC98F17504B71000EBF05 /* second@2x.png */,
 				BC4A954E177655A5004EF63D /* ccmc_banner2.png */,
 				BC4A954F177655A5004EF63D /* ccmc_banner3.png */,
-				BC4A9550177655A5004EF63D /* versebyverse.png */,
-				BC4A9551177655A5004EF63D /* versebyversex2.png */,
 			);
 			name = images;
 			path = ../../../../Documents/images;
+			sourceTree = "<group>";
+		};
+		BC6DDB3C17864DDF00C7A7E7 /* StateManagement */ = {
+			isa = PBXGroup;
+			children = (
+				BC6DDB3D17864E0300C7A7E7 /* CCStateManager.h */,
+				BC6DDB3E17864E0300C7A7E7 /* CCStateManager.m */,
+			);
+			name = StateManagement;
+			sourceTree = "<group>";
+		};
+		BC82B9FC1781EDDC00826361 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		BC8FFFFF175FC0C2007759CB /* Test Data */ = {
@@ -305,6 +364,7 @@
 		BC9CC95C17504B71000EBF05 = {
 			isa = PBXGroup;
 			children = (
+				BCE352461788D3A40045BE3C /* EventKit.framework */,
 				BC075F87177D243200B23B18 /* calvaryiconretina.png */,
 				BC075F85177D242D00B23B18 /* calavaryIcon.png */,
 				BCA40A9B177BE8F0005CA3A7 /* ccmc_default_icon_retina.png */,
@@ -343,12 +403,14 @@
 		BC9CC96E17504B71000EBF05 /* CalvaryiPhoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC82B9FC1781EDDC00826361 /* Utilities */,
 				BC41D82D177B9C8D0057DBF0 /* CalvaryiPhoneApp.entitlements */,
 				BC8FFFFF175FC0C2007759CB /* Test Data */,
 				BC3096A3175AE04F0019129F /* Controllers */,
 				BC3096941752C4C10019129F /* Models */,
 				BC9CC97717504B71000EBF05 /* CCAppDelegate.h */,
 				BC9CC97817504B71000EBF05 /* CCAppDelegate.m */,
+				BCE3523B178739330045BE3C /* newscell.xib */,
 				BC9CC98017504B71000EBF05 /* MainStoryboard.storyboard */,
 				BC9CC98617504B71000EBF05 /* first.png */,
 				BC9CC96F17504B71000EBF05 /* Supporting Files */,
@@ -373,17 +435,89 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BCB688EE177FB800002E5703 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				BC00E94017850E3C00E32F53 /* back_button.png */,
+				BC00E93E17850E3300E32F53 /* forward_button.png */,
+				BC00E93C17850E2000E32F53 /* pause_button.png */,
+				BC82B9FD1781F26600826361 /* play_button.png */,
+				BCB688EF177FB800002E5703 /* bookmark.png */,
+				BCB688F0177FB800002E5703 /* calendar.png */,
+				BCB688F1177FB800002E5703 /* ccbanner4.png */,
+				BCB688F2177FB800002E5703 /* CCMC-logo-RGB color transparent.png */,
+				BCB688F3177FB800002E5703 /* ccmc_banner.png */,
+				BCB688F4177FB800002E5703 /* ccmc_banner2.png */,
+				BCB688F5177FB800002E5703 /* ccmc_banner3.png */,
+				BCB688F6177FB800002E5703 /* ccmc_default.png */,
+				BCB688F7177FB800002E5703 /* ccmc_default_icon.png */,
+				BCB688F8177FB800002E5703 /* Default-568h@2x.png */,
+				BCB688F9177FB800002E5703 /* Default.png */,
+				BCB688FA177FB800002E5703 /* Default@2x.png */,
+				BCB688FB177FB800002E5703 /* first.png */,
+				BCB688FC177FB800002E5703 /* multiple.png */,
+				BCB688FD177FB800002E5703 /* speaker-electric.png */,
+			);
+			name = png;
+			path = CalvaryiPhoneApp/png;
+			sourceTree = SOURCE_ROOT;
+		};
+		BCB68913177FBA86002E5703 /* Sermons */ = {
+			isa = PBXGroup;
+			children = (
+				BC3096951752CE240019129F /* CCStudiesStore.h */,
+				BC3096961752CE240019129F /* CCStudiesStore.m */,
+				BC309698175A6F7F0019129F /* CCMainMenuStore.h */,
+				BC309699175A6F7F0019129F /* CCMainMenuStore.m */,
+				BC30969B175A72250019129F /* CCMenuItem.h */,
+				BC30969C175A72250019129F /* CCMenuItem.m */,
+				BC3096A0175ACD0B0019129F /* CCStudies.h */,
+				BC3096A1175ACD0B0019129F /* CCStudies.m */,
+				BC75656F176013E300CE64BF /* CCSermonModel.h */,
+				BC756570176013E300CE64BF /* CCSermonModel.m */,
+				BC7565721760154700CE64BF /* CCSermonStudyStore.h */,
+				BC7565731760154700CE64BF /* CCSermonStudyStore.m */,
+				BC756575176018D200CE64BF /* CCRecentFeed.h */,
+				BC756576176018D300CE64BF /* CCRecentFeed.m */,
+				BCC4FF3E1763D4DC001573D7 /* CCFeed.h */,
+				BCC4FF3F1763D4DC001573D7 /* CCFeed.m */,
+				BCC4FF3B1763CC1B001573D7 /* CCFeedManager.h */,
+				BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */,
+				BCC4FF3517615E30001573D7 /* SermonModel.h */,
+				BCC4FF3617615E30001573D7 /* SermonModel.m */,
+			);
+			name = Sermons;
+			sourceTree = "<group>";
+		};
+		BCB68914177FBAAE002E5703 /* MenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6890D177FB844002E5703 /* menuItemModel.h */,
+				BCB6890E177FB844002E5703 /* menuItemModel.m */,
+				BCB68910177FB9A5002E5703 /* MenuItemsModel.h */,
+				BCB68911177FB9A6002E5703 /* MenuItemsModel.m */,
+				BCB68915177FBACF002E5703 /* CCMenuItemManager.h */,
+				BCB68916177FBACF002E5703 /* CCMenuItemManager.m */,
+			);
+			name = MenuItem;
+			sourceTree = "<group>";
+		};
 		BCC4FF411763EBD8001573D7 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
-				BCC4FF3517615E30001573D7 /* SermonModel.h */,
-				BCC4FF3617615E30001573D7 /* SermonModel.m */,
+				BCE3522E178713010045BE3C /* Events */,
+				BCE3522D178712FB0045BE3C /* News */,
+				BCB68913177FBA86002E5703 /* Sermons */,
+				BCB68914177FBAAE002E5703 /* MenuItem */,
+			);
+			name = Feeds;
+			sourceTree = "<group>";
+		};
+		BCE3522D178712FB0045BE3C /* News */ = {
+			isa = PBXGroup;
+			children = (
 				BCC4FF381762D37C001573D7 /* CCFeedImageStore.h */,
 				BCC4FF391762D37C001573D7 /* CCFeedImageStore.m */,
-				BCC4FF3B1763CC1B001573D7 /* CCFeedManager.h */,
-				BCC4FF3C1763CC1B001573D7 /* CCFeedManager.m */,
-				BCC4FF3E1763D4DC001573D7 /* CCFeed.h */,
-				BCC4FF3F1763D4DC001573D7 /* CCFeed.m */,
 				BC372E791768DCC100ACC6B2 /* NewsModel.h */,
 				BC372E7A1768DCC100ACC6B2 /* NewsModel.m */,
 				BC372E7C1768DE1E00ACC6B2 /* CCNewsFeed.h */,
@@ -391,7 +525,20 @@
 				BC86D84E176A43BF00348353 /* CCNewsFeedManager.h */,
 				BC86D84F176A43BF00348353 /* CCNewsFeedManager.m */,
 			);
-			name = Feeds;
+			name = News;
+			sourceTree = "<group>";
+		};
+		BCE3522E178713010045BE3C /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				BCE3522F1787132B0045BE3C /* EventModel.h */,
+				BCE352301787132B0045BE3C /* EventModel.m */,
+				BCE352321787168A0045BE3C /* EventsModel.h */,
+				BCE352331787168A0045BE3C /* EventsModel.m */,
+				BCE352351787173D0045BE3C /* CCEventManager.h */,
+				BCE352361787173D0045BE3C /* CCEventManager.m */,
+			);
+			name = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,22 +644,24 @@
 				BC9CC98E17504B71000EBF05 /* second.png in Resources */,
 				BC9CC99017504B71000EBF05 /* second@2x.png in Resources */,
 				BC8F0001175FC0E0007759CB /* current_response.json in Resources */,
-				BC4A9552177655A5004EF63D /* ccmc_banner2.png in Resources */,
-				BC4A9553177655A5004EF63D /* ccmc_banner3.png in Resources */,
-				BC4A9554177655A5004EF63D /* versebyverse.png in Resources */,
-				BC4A9555177655A5004EF63D /* versebyversex2.png in Resources */,
-				BC4A955717766BA7004EF63D /* ccmc_default.png in Resources */,
-				BC4A955B17766D9B004EF63D /* calendar.png in Resources */,
-				BC4A955D17766E30004EF63D /* multiple.png in Resources */,
-				BC4A955F17766E7B004EF63D /* bookmark.png in Resources */,
-				BC4A956117766E97004EF63D /* speaker-electric.png in Resources */,
 				BC075F81177BF62800B23B18 /* ccmc_default_icon.png in Resources */,
 				BC075F82177BF62F00B23B18 /* ccmc_default_icon_retina.png in Resources */,
-				BC075F84177CE52D00B23B18 /* ccmc_banner3.png in Resources */,
 				BC075F86177D242D00B23B18 /* calavaryIcon.png in Resources */,
 				BC075F88177D243200B23B18 /* calvaryiconretina.png in Resources */,
-				BC075F8A177D2B2300B23B18 /* CCMC-logo-RGB color transparent.png in Resources */,
-				BC075F8C177D2CF100B23B18 /* ccbanner4.png in Resources */,
+				BCB688FE177FB800002E5703 /* bookmark.png in Resources */,
+				BCB688FF177FB800002E5703 /* calendar.png in Resources */,
+				BCB68900177FB800002E5703 /* ccbanner4.png in Resources */,
+				BCB68901177FB800002E5703 /* CCMC-logo-RGB color transparent.png in Resources */,
+				BCB68902177FB800002E5703 /* ccmc_banner.png in Resources */,
+				BCB68903177FB800002E5703 /* ccmc_banner2.png in Resources */,
+				BCB68904177FB800002E5703 /* ccmc_banner3.png in Resources */,
+				BCB6890B177FB800002E5703 /* multiple.png in Resources */,
+				BCB6890C177FB800002E5703 /* speaker-electric.png in Resources */,
+				BC82B9FE1781F26600826361 /* play_button.png in Resources */,
+				BC00E93D17850E2000E32F53 /* pause_button.png in Resources */,
+				BC00E93F17850E3300E32F53 /* forward_button.png in Resources */,
+				BC00E94117850E3C00E32F53 /* back_button.png in Resources */,
+				BCE3523C178739340045BE3C /* newscell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +783,16 @@
 				BC4A95451772D1B7004EF63D /* CCNewsViewController.m in Sources */,
 				BC4A954C17753509004EF63D /* CCNewsDetailViewController.m in Sources */,
 				BCA40A9F177BEA26005CA3A7 /* CCMoreViewController.m in Sources */,
+				BCB6890F177FB844002E5703 /* menuItemModel.m in Sources */,
+				BCB68912177FB9A6002E5703 /* MenuItemsModel.m in Sources */,
+				BCB68917177FBACF002E5703 /* CCMenuItemManager.m in Sources */,
+				BC6DDB3F17864E0300C7A7E7 /* CCStateManager.m in Sources */,
+				BCE352311787132B0045BE3C /* EventModel.m in Sources */,
+				BCE352341787168A0045BE3C /* EventsModel.m in Sources */,
+				BCE352371787173D0045BE3C /* CCEventManager.m in Sources */,
+				BCE3523A17871AB40045BE3C /* CCEventsControllerViewController.m in Sources */,
+				BCE3523F17875C930045BE3C /* CCEventCell.m in Sources */,
+				BCE35245178889FB0045BE3C /* CCEventsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

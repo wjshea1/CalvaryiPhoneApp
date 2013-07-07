@@ -38,7 +38,7 @@
     
     
     // Need to put this in a plist
-    NSString *requestUrl = @"http://calvary.cloudfoundry.com/feeds/news";
+    NSString *requestUrl = @"http://calvary.cfapps.io/feeds/news";
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     CCNewsFeedManager *myManager = [CCNewsFeedManager sharedManager];

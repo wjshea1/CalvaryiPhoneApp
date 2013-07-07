@@ -1,0 +1,25 @@
+From 11c174c3b59b6926266c96d7c59773fa16d495cd Mon Sep 17 00:00:00 2001
+From: William Shea <wjshea@mac.com>
+Date: Fri, 28 Jun 2013 21:05:40 -0400
+Subject: [PATCH] Today Sync
+
+---
+ .../UserInterfaceState.xcuserstate                 | Bin 156223 -> 156223 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/CalvaryiPhoneApp.xcworkspace/xcuserdata/wjshea.xcuserdatad/UserInterfaceState.xcuserstate b/CalvaryiPhoneApp.xcworkspace/xcuserdata/wjshea.xcuserdatad/UserInterfaceState.xcuserstate
+index b19f58e5e0d2f79869fe7c72fac5f30ac43e21e9..705ab7bff3819f0c69a27928bf0108e3981b39e5 100644
+GIT binary patch
+delta 132
+zcmdmggmeE9&JBFEteJ}pf)7p>u6+t(#Tst@TU*2eVkQPnmycl--Q3y4$HMZ;{yNv@
+z*=@P*AQ{i{&AjLKdxMxan6_V(WV|8|WE+OnZC_={SfB(F|7E@%sQI@FkZmH{zg@nO
+WaSKS?P(*4vP`$|ZH;WmA_W=O2p)+X!
+
+delta 132
+zcmdmggmeE9&JBFEtQjxU$_pk7*FFWY+8j3jtu0~!F?*_}%f~Q^ZtiU2V_|ujHZgef
+z?6zEYkW5DXX5MrAy@AYhyUOhsB^j^CgV^U3x398fEKmZmvoCK4YW}SPWM}wK*e>75
+VxCJaek!Lzky~y@Aiy4FW0RR}PIT`=}
+
+-- 
+1.7.11.1
+
