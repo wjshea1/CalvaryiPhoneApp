@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface CCMediaPlayerManager : NSObject
++(CCMediaPlayerManager *) sharedManager;
+-(AVPlayer *)getCurrentPlayer;
+
 
 @end

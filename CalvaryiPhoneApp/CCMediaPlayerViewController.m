@@ -8,6 +8,8 @@
 
 #import "CCMediaPlayerViewController.h"
 #import "CCFeedImageStore.h"
+#import "CCMediaPlayerManager.h"
+
 /* Asset keys */
 NSString * const kTracksKey         = @"tracks";
 NSString * const kPlayableKey		= @"playable";
@@ -57,7 +59,9 @@ NSString * const kCurrentItemKey	= @"currentItem";
     
     NSLog(@"play file %@", _item.audioFileLocation);
     if ( !_streamingPlayer ) {
-        _streamingPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
+       // _streamingPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
+        _streamingPlayer = [[CCMediaPlayerManager sharedManager] getCurrentPlayer];
+       // [_streamingPlayer initWithURL:[NSURL URLWithString:_item.audioFileLocation]];
     } else {
         // There is already a streaming running
         // We want to remove the observers and listeners and start up a new player
@@ -136,10 +140,19 @@ NSString * const kCurrentItemKey	= @"currentItem";
 
 
 
+- (IBAction)scrubberValueChanged:(id)sender {
+    NSLog(@"%f", _scrubber.value);
+    double duration = CMTimeGetSeconds([self playerItemDuration]);
+    NSLog(@"%f", duration);
+    NSLog(@"%f", duration * _scrubber.value);
+    
+    
+}
+
 - (IBAction)pressButtonBack:(id)sender {
     if ( _streamingPlayer) {
         CMTime currentTime = [_streamingPlayer currentTime];
-        currentTime.value -= (30 * currentTime.timescale);
+        currentTime.value -= (1800 * currentTime.timescale);
         
         [_streamingPlayer seekToTime:currentTime];
         
@@ -148,28 +161,46 @@ NSString * const kCurrentItemKey	= @"currentItem";
 
 - (IBAction)pressButtonPlayPause:(id)sender {
     
-    static bool isPlaying = false; // This is a bug wating to happen
+ //   static bool isPlaying = false; // This is a bug wating to happen
+    [self initScrubber];
     
-    
-    if ( !isPlaying ){
+    if ( ![self isPlaying] ){
         [_streamingPlayer play];
-        isPlaying = true;
+        _isPlaying = true;
+        // SetPauseImage
+        [_buttonPlayPause setImage:[UIImage imageNamed:@"basic_pause_small"] forState:UIControlStateNormal];
+        
     } else {
         [_streamingPlayer pause];
-        isPlaying = false;
+        _isPlaying = false;
+        // SetPlayImage
+        [_buttonPlayPause setImage:[UIImage imageNamed:@"basic_play_button_small"] forState:UIControlStateNormal];
     }
     
     
     
  }
 
+-(void)syncPlayPauseButton
+{
+    
+}
+
+-(BOOL) isPlaying
+{
+    if (_streamingPlayer.rate != 0.f)
+        return true;
+    return false;
+}
 
 
 -(void)initScrubber
-{
+{	
     CMTime playerDuration  = [self playerItemDuration];
     if ( CMTIME_IS_INVALID(playerDuration)){
         // bad file
+        
+        // ok this causes a problem in initing the scrubber for files that are not loading yet
         return;
     }
     
@@ -218,17 +249,61 @@ NSString * const kCurrentItemKey	= @"currentItem";
 - (IBAction)pressButtonForward:(id)sender {
     if ( _streamingPlayer) {
         CMTime currentTime = [_streamingPlayer currentTime];
-        currentTime.value += (30 * currentTime.timescale);
+        currentTime.value += (1800 * currentTime.timescale);
         
         [_streamingPlayer seekToTime:currentTime];
         
     }
 }
 
-- (IBAction)beginScrub:(id)sender {
+- (IBAction)beginScrub:(id)sender
+{
+    NSLog(@"Begin scubbing");
+	mRestoreAfterScrubbingRate = [self.streamingPlayer rate];
+    [self.streamingPlayer setRate:0.f];
+	
+	/* Remove previous timer. */
+	[self removePlayerTimeObserver];
+
+
 }
 
 - (IBAction)endScrub:(id)sender {
+    NSLog(@"End Scrubbing");
+    
+    // Where to seek to
+
+    
+    if (!mTimeObserver)
+	{
+		CMTime playerDuration = [self playerItemDuration];
+		if (CMTIME_IS_INVALID(playerDuration))
+		{
+			return;
+		}
+		
+		double duration = CMTimeGetSeconds(playerDuration);
+		if (isfinite(duration))
+		{
+			CGFloat width = CGRectGetWidth([self.scrubber bounds]);
+			double tolerance = 0.5f * duration / width;
+            
+			mTimeObserver = [self.streamingPlayer addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(tolerance, NSEC_PER_SEC) queue:NULL usingBlock:
+                              ^(CMTime time)
+                              {
+                                  [self syncScrubber];
+                              }];
+		}
+	}
+    
+	if (mRestoreAfterScrubbingRate)
+	{
+		[self.streamingPlayer setRate:mRestoreAfterScrubbingRate];
+		mRestoreAfterScrubbingRate = 0.f;
+	}
+    
+    
+    
 }
 
 /* The user has released the movie thumb control to stop scrubbing through the movie. */
@@ -270,12 +345,22 @@ NSString * const kCurrentItemKey	= @"currentItem";
         float maxValue = [ _scrubber maximumValue];
         double time = CMTimeGetSeconds([_streamingPlayer currentTime]);
         [_scrubber setValue:(maxValue - minValue) * time / duration + minValue];
-      
+  
         [_titleCurrentTime setText:[self getTextforPlayerWithCMTime:_streamingPlayer.currentTime]];
         [_titleEndTime setText:[self getTextforPlayerWithCMTime:playerDuration]];
     }
     
     
+}
+
+- (NSTimeInterval) availableDuration;
+{
+    NSArray *loadedTimeRanges = [[self.streamingPlayer currentItem] loadedTimeRanges];
+    CMTimeRange timeRange = [[loadedTimeRanges objectAtIndex:0] CMTimeRangeValue];
+    float startSeconds = CMTimeGetSeconds(timeRange.start);
+    float durationSeconds = CMTimeGetSeconds(timeRange.duration);
+    NSTimeInterval result = startSeconds + durationSeconds;
+    return result;
 }
 
 

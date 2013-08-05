@@ -29,6 +29,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
+                                        init];
+    
+    
+    [refreshControl addTarget:self action:@selector(refreshList) forControlEvents:UIControlEventValueChanged];
+    
+    self.refreshControl = refreshControl;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -149,6 +157,23 @@
     NewsModel *item = [myManager objectInCurrentAtIndex:[indexPath row]];
     destView.item = item;
 
+}
+
+- (void) refreshList
+{
+    NSString *requestUrl = @"http://calvary.cfapps.io/feeds/news";
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    CCNewsFeedManager *myManager = [CCNewsFeedManager sharedManager];
+    
+    [myManager getNewsWithUrl:requestUrl completion:^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self.refreshControl endRefreshing];
+        [self.tableView reloadData];
+         
+    }];
+
+    
 }
 
 @end

@@ -16,5 +16,5 @@
 @property(strong, nonatomic) NSString *internetLink;
 @property(strong, nonatomic) NSString *description;
 @property(strong, nonatomic) NSDate   *publishDate;
-
+@property(strong, nonatomic) NSString *imageLink;
 @end

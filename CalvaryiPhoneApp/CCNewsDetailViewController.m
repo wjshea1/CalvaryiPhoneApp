@@ -9,6 +9,9 @@
 #import "CCNewsDetailViewController.h"
 #import <Social/Social.h>
 
+#import "constants.h"
+#import "CCFeedImageStore.h"
+
 @interface CCNewsDetailViewController ()
 
 @end
@@ -30,6 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -41,10 +47,20 @@
     if ( _item ){
         
         [_headline setText:_item.headline];
-        [_date setText:_item.publishDate.description];
+        
+        NSDateFormatter *format = [[NSDateFormatter alloc] init];
+        [format setDateFormat:DEFAULT_DATE_FORMAT];
+        NSString *dateString = [format stringFromDate:_item.publishDate];
+
+         
+        [_date setText:dateString];
         [_description setText:_item.description];
        
-        
+        CCFeedImageStore *myStore = [CCFeedImageStore sharedStore];
+        UIImage *image = [myStore getImageForURL:_item.imageLink];
+        if ( image )
+            [[self newsImage] setImage:image];
+
         
     }
 }

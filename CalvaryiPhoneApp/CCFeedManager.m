@@ -59,13 +59,14 @@
 {
     // Check to see if feed in dictionary
     
-    
+     dataLoaded = false;
     currentFeed = [[CCFeed alloc] initFromURLWithString:requestString
                                           completion:^(JSONModel *model, JSONModelError *err){
                                               
                                               NSLog(@"number items returned %d",currentFeed.sermons.count);
                                               //[dict setObject:current forKey:requestString];
                                               // Dont forget to do the completion thing otherwise
+                                               dataLoaded = true;
                                               complete();
                                                                                            
                                           }];
@@ -86,6 +87,11 @@
 -(SermonModel *) objectInCurrentAtIndex:(NSUInteger)index
 {
     return [[currentFeed sermons]objectAtIndex:index];
+}
+
+-(BOOL)isDataloaded
+{
+    return dataLoaded;
 }
 
 @end

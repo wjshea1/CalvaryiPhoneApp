@@ -9,6 +9,8 @@
 #ifndef CalvaryiPhoneApp_constants_h
 #define CalvaryiPhoneApp_constants_h
 
+#define BASE_URL @"http://calvary.cfapps.io"
+#define DEFAULT_DATE_FORMAT @"MMM dd"
 
 
 #endif

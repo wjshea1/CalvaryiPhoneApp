@@ -35,4 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sendFeedback:(id)sender {
+}
+
+- (IBAction)cancelBtn:(id)sender {
+}
 @end

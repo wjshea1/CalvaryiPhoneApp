@@ -9,5 +9,34 @@
 #import "CCMediaPlayerManager.h"
 
 @implementation CCMediaPlayerManager
+{
+    AVPlayer *_player;
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _player = [[AVPlayer alloc] init];
+    }
+    return self;
+}
+
++(CCMediaPlayerManager *) sharedManager
+{
+    static CCMediaPlayerManager *manager = nil;
+    @synchronized(self) {
+        if (!manager) {
+            manager = [[CCMediaPlayerManager alloc] init];
+        }
+    }
+    return manager;
+
+    
+}
+-(AVPlayer *)getCurrentPlayer
+{
+    return _player;
+}
 
 @end

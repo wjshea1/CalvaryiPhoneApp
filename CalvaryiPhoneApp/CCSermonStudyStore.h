@@ -16,7 +16,10 @@
     // This will eventually be a NSMutableArray
     CCRecentFeed * _list;
     NSMutableDictionary *_dict;
+    
 }
+
+@property(nonatomic) bool loaded;
 
 // Need to figure out the best way to handle this i should probably use a block pased in by the parent on completion
 + (CCSermonStudyStore *) sharedStoreWithView:(UIView *)parent;

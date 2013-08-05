@@ -28,11 +28,12 @@
 @property (strong, nonatomic) IBOutlet UITextView *summary;
 @property (strong, nonatomic) IBOutlet UIButton *buttonPlayPause;
 @property (strong, nonatomic) AVPlayer *streamingPlayer;
-@property (nonatomic) bool isPlaying;
+@property (nonatomic) BOOL isPlaying;
 @property (strong, nonatomic) IBOutlet UISlider *scrubber;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
 @property (strong, nonatomic) IBOutlet UILabel *titleCurrentTime;
 @property (strong, nonatomic) IBOutlet UILabel *titleEndTime;
+- (IBAction)scrubberValueChanged:(id)sender;
 
 - (IBAction)pressButtonBack:(id)sender;
 - (IBAction)pressButtonPlayPause:(id)sender;

@@ -21,7 +21,7 @@
 
 
 +(CCFeedManager *)sharedManager;
-
+-(BOOL)isDataloaded;
 -(void)getFeedWithURL:(NSString *)requestString;
 -(void)getFeedWithURL:(NSString *)requestString
         completion:(void (^)(void) )completion;

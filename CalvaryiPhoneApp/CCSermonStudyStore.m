@@ -33,9 +33,11 @@
         _list = [[CCRecentFeed alloc] initFromURLWithString:@"http://calvary.cfapps.io/Calvary/feeds/current"
                                                  completion:^(JSONModel *model, JSONModelError *err){
                                                      NSLog(@"feeds, %@", _list.sermons);
+                                                     _loaded = true;
                                                      [MBProgressHUD hideHUDForView:parentView animated:YES];
                                                      dispatch_async(dispatch_get_main_queue(), ^{
                                                          [((UITableView *)parentView) reloadData];
+                                                         
                                                      });
                                                  }];
 

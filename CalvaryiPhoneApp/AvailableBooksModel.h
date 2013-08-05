@@ -8,6 +8,6 @@
 
 #import "JSONModel.h"
 
-@interface AvailableBooksModel : JSONModel
+@interface AvailableBooksModel : NSObject
 
 @end

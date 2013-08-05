@@ -101,10 +101,7 @@
     
     CCFeedManager *myManager = [CCFeedManager sharedManager];
     SermonModel *sermon = [myManager objectInCurrentAtIndex:[indexPath row]];
-    
-  /*  CCSermonStudyStore *myStore = [CCSermonStudyStore sharedStoreWithView:self.view];
-    SermonModel *sermon = [myStore getMenuItemAtIndex:[indexPath row]];*/
-    
+        
     int count = [myManager getCurrentListCount];
     if ( count > 0 ){
         [[cell textLabel] setText:[sermon title]];
@@ -112,9 +109,15 @@
         UIImage *image = [[CCFeedImageStore sharedStore] getImageForURL:sermon.imageFileLocation];
         [[cell imageView] setImage:image];
     } else {
-        [[cell textLabel] setText:@"Coming Soon!!!"];
-        [[cell detailTextLabel] setText:@"We are moving more studies to the app soon!"];
-        
+        if ( [myManager isDataloaded]){
+            [[cell textLabel] setText:@"Coming Soon!!!"];
+            [[cell detailTextLabel] setText:@"We are moving more studies to the app soon!"];
+           
+        } else {
+            [[cell textLabel] setText:@"Loading..."];
+             [[cell detailTextLabel] setText:@""];
+            
+        }
         // Construction Image needs to be created
        // UIImage *image = [[CCFeedImageStore sharedStore] getImageForURL:sermon.imageFileLocation];
        // [[cell imageView] setImage:image];

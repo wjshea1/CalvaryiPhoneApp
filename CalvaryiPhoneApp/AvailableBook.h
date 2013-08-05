@@ -9,5 +9,7 @@
 #import "JSONModel.h"
 
 @interface AvailableBook : JSONModel
-
+@property(strong, nonatomic) NSString *name;
+@property( nonatomic) NSInteger id;
+//@property(nonatomic) NSInteger count;
 @end

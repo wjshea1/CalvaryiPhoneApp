@@ -37,6 +37,18 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
+                                        init];
+    
+    
+    [refreshControl addTarget:self action:@selector(refreshList) forControlEvents:UIControlEventValueChanged];
+    
+    self.refreshControl = refreshControl;
+
+    
+    
     // Load the xib for the subview
     UINib *nib = [UINib nibWithNibName:@"newscell" bundle:nil];
     [[self tableView] registerNib:nib forCellReuseIdentifier:@"EventsItemCellReuseIdentifier"];
@@ -163,6 +175,25 @@
         destView.item = event;
     }
 
+    
+}
+
+
+
+- (void) refreshList
+{
+    NSString *requestUrl = @"http://calvary.cfapps.io/feeds/events";
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    CCEventManager *myManager = [CCEventManager sharedManger];
+    [myManager getEventsWithURLString:requestUrl withCompletion:^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self.refreshControl endRefreshing];
+        [self.tableView reloadData];
+
+        
+    }];
+      
     
 }
 @end

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CCFeedbackViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *questionText;
+@property (strong, nonatomic) IBOutlet UITextView *answerTextView;
+- (IBAction)sendFeedback:(id)sender;
+- (IBAction)cancelBtn:(id)sender;
 
 @end

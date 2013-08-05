@@ -17,5 +17,6 @@
 - (IBAction)clickShareButton:(id)sender;
 @property (weak, nonatomic) NewsModel *item;
 - (IBAction)clickLearnMoreAction:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *newsImage;
 
 @end
